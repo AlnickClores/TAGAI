@@ -1,0 +1,475 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-11-13",
+    "totalDrinks": 28,
+    "categories": ["mixes", "readyToDrink"],
+    "author": "TAGAI AI",
+    "description": "A curated list of Filipino-style mixed and ready-to-drink alcoholic beverages."
+  },
+  "drinks": {
+    "mixes": [
+      {
+        "name": "Mestiza",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Moderate",
+        "recipe": [
+          "1 shot Tanduay Rum",
+          "100 mL Red Horse Beer",
+          "100 mL Sprite"
+        ],
+        "instructions": [
+          "Put some ice on your glass.",
+          "Pour the Tanduay Rum into the glass first.",
+          "Add the Red Horse Beer.",
+          "Top it off with Sprite.",
+          "Stir gently and enjoy!"
+        ],
+        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
+        "mood": ["Party", "Casual", "Summer"],
+        "price": "Budget (₱100 - ₱300)"
+      },
+      {
+        "name": "Boracay",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Moderate",
+        "recipe": [
+          "1 shot Tanduay Rum",
+          "100 mL Coffee",
+          "50g Chocolate Powder",
+          "Dash of Condensed Milk"
+        ],
+        "instructions": [
+          "In a glass, mix the chocolate powder with coffee and condensed milk until smooth.",
+          "Pour in the Tanduay Rum and stir again until no lumps remain.",
+          "Add ice if desired.",
+          "Stir gently and enjoy!"
+        ],
+        "flavorProfile": ["Sweet", "Creamy", "Rich"],
+        "mood": ["Cozy", "Relaxing", "Evening"],
+        "price": "Medium (₱300 - ₱500)"
+      },
+      {
+        "name": "Velocity",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Moderate",
+        "recipe": [
+          "2 parts Gin",
+          "2 parts Gatorade",
+          "2 parts Sprite",
+          "Lemon"
+        ],
+        "instructions": [
+          "Put some ice on your glass.",
+          "Mix the 3 liquids together starting with Gin.",
+          "Squeeze a slice of lemon.",
+          "Drink!"
+        ],
+        "flavorProfile": ["Fruity", "Citrus", "Refreshing"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Medium (₱300 - ₱500)"
+      },
+      {
+        "name": "Kagatan",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Strong",
+        "recipe": ["1 part Condensed Milk", "2 parts Coffee", "3 parts Rum"],
+        "instructions": [
+          "Add ice into your glass.",
+          "Put the condensed milk and coffee, then stir until blended.",
+          "Mix in the rum at the end.",
+          "Stir and enjoy!"
+        ],
+        "flavorProfile": ["Creamy", "Rich", "Bold"],
+        "mood": ["Relaxed", "Romantic", "Sad"],
+        "price": "Medium (₱300 - ₱500)"
+      },
+      {
+        "name": "Primera Sunburst",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": [
+          "60ml Primera Light Brandy",
+          "30ml Sugar Syrup",
+          "90ml Soda Water",
+          "6pcs Calamansi (Juice)"
+        ],
+        "instructions": [
+          "Squeeze the juice of 6 calamansi into a glass.",
+          "Add sugar syrup and some ice.",
+          "Pour the brandy and soda water last.",
+          "Stir and enjoy!"
+        ],
+        "flavorProfile": ["Citrus", "Sweet", "Refreshing", "Fruity"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱199)"
+      },
+      {
+        "name": "Gin Pomelo",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": ["San Miguel Gin", "Pomelo Juice Powder", "1L Water", "Ice"],
+        "instructions": [
+          "Add ice to a pitcher and fill it halfway with water.",
+          "Pour the pomelo juice powder into the gin bottle, then shake well to mix.",
+          "Optional: Carefully light up the gin for a few seconds to slightly burn off the alcohol. Pour a small amount into the pitcher and repeat 3–5 times.",
+          "Stir the mixture and serve chilled."
+        ],
+        "flavorProfile": ["Fruity", "Sweet", "Refreshing", "Citrus"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱120)"
+      },
+      {
+        "name": "RPG",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Strong",
+        "recipe": [
+          "Red Horse Beer",
+          "Pineapple Juice",
+          "San Miguel Gin",
+          "Ice"
+        ],
+        "instructions": [
+          "Fill a large pitcher or container with ice.",
+          "Pour in the Red Horse Beer first to form the base.",
+          "Add pineapple juice and stir gently to blend.",
+          "Slowly pour in the gin and mix well.",
+          "Serve cold and enjoy with friends — handle with care, it hits hard!"
+        ],
+        "flavorProfile": ["Fruity", "Refreshing", "Bold", "Sweet"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Kisay",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Strong",
+        "recipe": [
+          "San Miguel Gin",
+          "Red Horse Beer",
+          "Sprite",
+          "3pcs Calamansi"
+        ],
+        "instructions": [
+          "Fill a large pitcher with ice.",
+          "Pour in the Red Horse Beer as your base.",
+          "Add San Miguel Gin and mix gently.",
+          "Squeeze the juice of 3 calamansi into the mixture.",
+          "Top it off with Sprite for a fizzy, refreshing finish.",
+          "Stir lightly and serve chilled."
+        ],
+        "flavorProfile": ["Citrus", "Refreshing", "Bold", "Fruity"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Red Alert",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Strong",
+        "recipe": [
+          "San Miguel Gin",
+          "Sting Energy Drink",
+          "Orange Juice Powder"
+        ],
+        "instructions": [
+          "In a pitcher, pour the Sting Energy Drink as the base.",
+          "Add the orange juice powder and stir until fully dissolved.",
+          "Slowly pour in San Miguel Gin and mix well.",
+          "Add ice if desired and serve immediately while chilled.",
+          "Optional: Lightly torch the gin before mixing to reduce its alcohol strength — only if you want a smoother kick."
+        ],
+        "flavorProfile": ["Citrus", "Sweet", "Bold", "Refreshing"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Tia Maria's Zombie",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": ["San Miguel Gin", "Sprite", "Zesto Strawberry Juice"],
+        "instructions": [
+          "Fill a glass or pitcher with ice.",
+          "Pour in Zesto Strawberry Juice and stir lightly.",
+          "Add San Miguel Gin and mix well.",
+          "Top off with Sprite for a fizzy finish.",
+          "Serve chilled."
+        ],
+        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Toma Collins",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": [
+          "San Miguel Gin",
+          "Honey",
+          "Tonic Water",
+          "Mint Leaves",
+          "4pcs Calamansi"
+        ],
+        "instructions": [
+          "Muddle mint leaves and calamansi juice in a glass.",
+          "Add honey and stir until dissolved.",
+          "Fill the glass with ice.",
+          "Pour in San Miguel Gin and top off with tonic water.",
+          "Stir gently and serve chilled."
+        ],
+        "flavorProfile": ["Citrus", "Sweet", "Refreshing", "Herbal"],
+        "mood": ["Happy", "Relaxed", "Romantic"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Soju Yakult Cocktail",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": ["Soju (Any Flavor)", "Yakult Drink", "Sprite"],
+        "instructions": [
+          "Fill a glass with ice.",
+          "Pour in one bottle of Yakult.",
+          "Add your desired amount of Soju and stir gently.",
+          "Top with Sprite for a fizzy finish.",
+          "Serve chilled."
+        ],
+        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Strawberry Soju Cocktail",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": [
+          "3 oz Strawberry Soju",
+          "4 oz Strawberry Calpico",
+          "3 oz Sprite",
+          "2-3 Strawberries (diced for garnish)"
+        ],
+        "instructions": [
+          "Fill a glass with ice.",
+          "Pour in Strawberry Calpico and stir gently.",
+          "Add Strawberry Soju and mix well.",
+          "Top with Sprite for a fizzy finish.",
+          "Garnish with diced strawberries.",
+          "Serve chilled."
+        ],
+        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
+        "mood": ["Happy", "Casual", "Romantic"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Blood Orange Paloma",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": [
+          "3 oz Blood Orange Juice",
+          "1.5 oz Tequila",
+          "2 tsp Lime Juice",
+          "Club Soda",
+          "Blood Orange Slices (for garnish)"
+        ],
+        "instructions": [
+          "Fill a glass with ice.",
+          "Pour in blood orange juice and lime juice.",
+          "Add tequila and stir gently.",
+          "Top with club soda.",
+          "Garnish with blood orange slices and serve chilled."
+        ],
+        "flavorProfile": ["Citrus", "Refreshing", "Slightly Bitter"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Mango Melona Soju Cocktail",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": [
+          "4 oz Mango Soju",
+          "4 oz Sprite",
+          "1 Mango Melona Ice Cream Bar"
+        ],
+        "instructions": [
+          "Fill a glass with ice.",
+          "Pour in Mango Soju and Sprite.",
+          "Stir gently to mix.",
+          "Add the Mango Melona Ice Cream Bar on top.",
+          "Serve immediately while the ice cream is melting slightly."
+        ],
+        "flavorProfile": ["Sweet", "Fruity", "Creamy", "Refreshing"],
+        "mood": ["Happy", "Casual", "Fun"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Cranberry Apple Mojito",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": [
+          "1 oz Cranberry Juice",
+          "2 oz Apple Juice",
+          "1 oz Lime Juice",
+          "3 oz Club Soda",
+          "2 oz White Rum",
+          "5 Mint Leaves"
+        ],
+        "instructions": [
+          "Muddle the mint leaves in a glass with lime juice to release the aroma.",
+          "Add cranberry juice and apple juice, then stir gently.",
+          "Fill the glass with ice.",
+          "Pour in white rum and top with club soda.",
+          "Stir lightly and garnish with a mint sprig.",
+          "Serve chilled."
+        ],
+        "flavorProfile": ["Citrus", "Fruity", "Refreshing", "Slightly Sweet"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Weng Weng",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Very Strong",
+        "recipe": [
+          "2 shots San Miguel Gin",
+          "2 shots Vodka",
+          "2 shots Rum",
+          "2 shots Brandy",
+          "2 shots Grenadine Syrup",
+          "1 cup Orange Juice",
+          "1 cup Pineapple Juice"
+        ],
+        "instructions": [
+          "Fill a large pitcher with ice.",
+          "Pour in all the spirits (gin, vodka, rum, brandy).",
+          "Add grenadine syrup and stir to combine.",
+          "Pour in orange juice and pineapple juice, stir gently.",
+          "Serve chilled in small glasses due to high alcohol content."
+        ],
+        "flavorProfile": ["Fruity", "Sweet", "Bold"],
+        "mood": ["Happy", "Party", "Casual"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Shembot",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Medium",
+        "recipe": [
+          "1 bottle San Miguel Gin",
+          "1 sachet Melon Juice Powder",
+          "1 sachet 3-in-1 Coffee Mix"
+        ],
+        "instructions": [
+          "Dissolve the melon juice powder and coffee mix in a bottle or pitcher.",
+          "Add San Miguel Gin and shake/stir well to combine.",
+          "Serve chilled over ice."
+        ],
+        "flavorProfile": ["Sweet", "Fruity", "Creamy"],
+        "mood": ["Happy", "Casual", "Fun"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Expired",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Strong",
+        "recipe": [
+          "2 bottles Red Horse Beer",
+          "1 bottle San Miguel Gin",
+          "2 Menthol Candies"
+        ],
+        "instructions": [
+          "Crush the menthol candies slightly.",
+          "In a large pitcher, combine Red Horse Beer and San Miguel Gin.",
+          "Add the crushed menthol candies and stir gently.",
+          "Serve chilled."
+        ],
+        "flavorProfile": ["Bold", "Refreshing", "Slightly Minty"],
+        "mood": ["Party", "Happy", "Casual"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Destroso",
+        "isReadyToDrink": false,
+        "alcoholLevel": "Strong",
+        "recipe": [
+          "1 bottle Red Horse Beer",
+          "1 bottle San Miguel Gin",
+          "1 sachet powdered pineapple juice",
+          "2 sachets powdered grape juice"
+        ],
+        "instructions": [
+          "Dissolve powdered pineapple and grape juices in a large pitcher.",
+          "Add Red Horse Beer and San Miguel Gin.",
+          "Stir gently to combine.",
+          "Serve chilled."
+        ],
+        "flavorProfile": ["Fruity", "Sweet", "Bold", "Refreshing"],
+        "mood": ["Happy", "Casual", "Party"],
+        "price": "Budget (₱100 - ₱250)"
+      }
+    ],
+    "readyToDrink": [
+      {
+        "name": "Red Horse Beer",
+        "alcoholLevel": "Strong",
+        "flavorProfile": ["Bold", "Malty", "Refreshing"],
+        "mood": ["Happy", "Party", "Casual"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Alfonso",
+        "alcoholLevel": "Medium",
+        "flavorProfile": ["Sweet", "Fruity", "Smooth"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Lemon Dou",
+        "alcoholLevel": "Medium",
+        "flavorProfile": ["Citrus", "Sweet", "Refreshing"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Smirnoff",
+        "alcoholLevel": "Strong",
+        "flavorProfile": ["Bold", "Smooth", "Slightly Sweet"],
+        "mood": ["Party", "Happy", "Casual"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Absolut Vodka",
+        "alcoholLevel": "Strong",
+        "flavorProfile": ["Bold", "Smooth", "Neutral"],
+        "mood": ["Party", "Happy", "Casual"],
+        "price": "Medium (₱251 - ₱500)"
+      },
+      {
+        "name": "Soju",
+        "alcoholLevel": "Medium",
+        "flavorProfile": ["Sweet", "Smooth", "Light"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Charles and James",
+        "alcoholLevel": "Medium",
+        "flavorProfile": ["Sweet", "Fruity", "Smooth"],
+        "mood": ["Happy", "Casual", "Romantic"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "Tanduay Ice",
+        "alcoholLevel": "Medium",
+        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
+        "mood": ["Happy", "Party", "Casual"],
+        "price": "Budget (₱100 - ₱250)"
+      },
+      {
+        "name": "SanMig Light",
+        "alcoholLevel": "Light",
+        "flavorProfile": ["Crisp", "Refreshing", "Light"],
+        "mood": ["Happy", "Casual", "Relaxed"],
+        "price": "Budget (₱100 - ₱250)"
+      }
+    ]
+  }
+}
