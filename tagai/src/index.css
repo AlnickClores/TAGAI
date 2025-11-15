@@ -1,1 +1,34 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-card: var(--card);
+  --color-text: var(--text);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+}
+
+html,
+body {
+  @apply bg-background text-text;
+}
+
+:root {
+  --background: #fdfbfe;
+  --card: #f5f3f6;
+  --text: #14091b;
+  --primary: #8d3cc3;
+  --secondary: #e09abd;
+  --accent: #d16b7e;
+}
+
+.dark {
+  --background: #030104;
+  --card: #0b090c;
+  --text: #efe4f6;
+  --primary: #8d3cc3;
+  --secondary: #651f42;
+  --accent: #942e40;
+}
