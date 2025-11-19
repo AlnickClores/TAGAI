@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import PreferencesForm from "./components/PreferencesForm";
 import Recommendation from "./components/Recommendation";
 import Footer from "./components/Footer";
@@ -17,6 +18,7 @@ function App() {
       <div className="mx-auto max-w-7xl px-4">
         <Navbar />
         <div className="flex flex-col gap-7">
+          <Hero />
           <PreferencesForm onRecommendations={handleRecommendations} />
           <Recommendation recommendations={recommendations} />
         </div>

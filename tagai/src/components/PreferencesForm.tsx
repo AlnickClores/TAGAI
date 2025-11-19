@@ -49,6 +49,7 @@ const PreferencesForm = ({ onRecommendations }: PreferencesFormProps) => {
 
   return (
     <form
+      id="preferencesForm"
       onSubmit={handleSubmit}
       className="space-y-6 p-6 mt-15 bg-card rounded-xl shadow-md border border-secondary"
     >

@@ -3,7 +3,7 @@ import { useTheme } from "../context/ThemeContext";
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className="flex  justify-between items-center space-x-2 mt-10">
+    <div className="flex justify-between items-center space-x-2 sticky top-0 z-50 bg-background/80 py-3">
       <div className="flex items-center gap-2">
         <h1 className="bg-primary p-3 rounded-lg">🍻</h1>
         <div>
