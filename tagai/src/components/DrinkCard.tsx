@@ -6,6 +6,8 @@ interface DrinkCardProps {
 }
 
 const DrinkCard = ({ drink, onClick }: DrinkCardProps) => {
+  const placeholder = "https://placehold.co/400x300";
+
   return (
     <div
       onClick={onClick}
@@ -13,14 +15,13 @@ const DrinkCard = ({ drink, onClick }: DrinkCardProps) => {
     >
       <div className="relative w-full overflow-hidden bg-secondary/5">
         <img
-          src="https://placehold.co/400x300"
+          src={drink.image || placeholder}
           alt={drink.name}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
       </div>
 
       <div className="relative flex flex-col grow p-5">
-        {/* Header section with title and category */}
         <div className="mb-4">
           <h3 className="text-xl font-bold text-text group-hover:text-primary transition-colors mb-2 line-clamp-2">
             {drink.name}

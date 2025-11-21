@@ -10,6 +10,7 @@ export interface DrinkPreferences {
 
 export interface Drink {
   name: string;
+  image?: string;
   alcoholLevel: string;
   recipe?: string[];
   instructions?: string[];

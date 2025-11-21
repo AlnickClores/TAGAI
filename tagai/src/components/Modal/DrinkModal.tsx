@@ -6,6 +6,7 @@ interface DrinkDetailModalProps {
 }
 
 const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
+  const placeholder = "https://placehold.co/400x300";
   if (!drink) return null;
 
   return (
@@ -47,7 +48,7 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
 
         <div className="relative w-full h-64 bg-secondary/20 overflow-hidden">
           <img
-            src="https://placehold.co/400x300"
+            src={drink.image || placeholder}
             alt={drink.name}
             className="w-full h-full object-cover"
           />

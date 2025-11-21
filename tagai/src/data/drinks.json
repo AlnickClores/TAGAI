@@ -11,6 +11,7 @@
     "mixes": [
       {
         "name": "Mestiza",
+        "image": "public/images/mixes/mestiza.jpg",
         "alcoholLevel": "Moderate",
         "recipe": [
           "1 shot Tanduay Rum",
@@ -30,6 +31,7 @@
       },
       {
         "name": "Boracay",
+        "image": "public/images/mixes/boracay.jpg",
         "alcoholLevel": "Moderate",
         "recipe": [
           "1 shot Tanduay Rum",
@@ -49,6 +51,7 @@
       },
       {
         "name": "Velocity",
+        "image": "public/images/mixes/velocity.jpg",
         "alcoholLevel": "Moderate",
         "recipe": [
           "2 parts Gin",
@@ -68,6 +71,7 @@
       },
       {
         "name": "Kagatan",
+        "image": "public/images/mixes/kagatan.jpg",
         "alcoholLevel": "Strong",
         "recipe": ["1 part Condensed Milk", "2 parts Coffee", "3 parts Rum"],
         "instructions": [
@@ -82,6 +86,7 @@
       },
       {
         "name": "Primera Sunburst",
+        "image": "public/images/mixes/primera_sunburst.jpg",
         "alcoholLevel": "Medium",
         "recipe": [
           "60ml Primera Light Brandy",
@@ -101,6 +106,7 @@
       },
       {
         "name": "Gin Pomelo",
+        "image": "public/images/mixes/gin_pomelo.jpg",
         "alcoholLevel": "Medium",
         "recipe": ["San Miguel Gin", "Pomelo Juice Powder", "1L Water", "Ice"],
         "instructions": [
@@ -115,6 +121,7 @@
       },
       {
         "name": "RPG",
+        "image": "public/images/mixes/rpg.jpg",
         "alcoholLevel": "Strong",
         "recipe": [
           "Red Horse Beer",
@@ -135,6 +142,7 @@
       },
       {
         "name": "Kisay",
+        "image": "public/images/mixes/kisay.jpg",
         "alcoholLevel": "Strong",
         "recipe": [
           "San Miguel Gin",
@@ -156,6 +164,7 @@
       },
       {
         "name": "Red Alert",
+        "image": "public/images/mixes/red_alert.jpg",
         "alcoholLevel": "Strong",
         "recipe": [
           "San Miguel Gin",
@@ -175,6 +184,7 @@
       },
       {
         "name": "Tia Maria’s Zombie",
+        "image": "public/images/mixes/tia_marias_zombie.jpg",
         "alcoholLevel": "Medium",
         "recipe": ["San Miguel Gin", "Sprite", "Zesto Strawberry Juice"],
         "instructions": [
@@ -190,6 +200,7 @@
       },
       {
         "name": "Toma Collins",
+        "image": "public/images/mixes/toma_collins.jpg",
         "alcoholLevel": "Medium",
         "recipe": [
           "San Miguel Gin",
@@ -211,6 +222,7 @@
       },
       {
         "name": "Soju Yakult Cocktail",
+        "image": "public/images/mixes/soju_yakult.jpg",
         "alcoholLevel": "Medium",
         "recipe": ["Soju (Any Flavor)", "Yakult Drink", "Sprite"],
         "instructions": [
@@ -226,6 +238,7 @@
       },
       {
         "name": "Strawberry Soju Cocktail",
+        "image": "public/images/mixes/strawberry_soju.jpg",
         "alcoholLevel": "Medium",
         "recipe": [
           "3 oz Strawberry Soju",
@@ -247,6 +260,7 @@
       },
       {
         "name": "Blood Orange Paloma",
+        "image": "public/images/mixes/blood_orange_paloma.jpg",
         "alcoholLevel": "Medium",
         "recipe": [
           "3 oz Blood Orange Juice",
@@ -268,6 +282,7 @@
       },
       {
         "name": "Mango Melona Soju Cocktail",
+        "image": "public/images/mixes/mango_melona_soju.jpg",
         "alcoholLevel": "Medium",
         "recipe": [
           "4 oz Mango Soju",
@@ -287,6 +302,7 @@
       },
       {
         "name": "Cranberry Apple Mojito",
+        "image": "public/images/mixes/cranberry_apple_mojito.jpg",
         "alcoholLevel": "Medium",
         "recipe": [
           "1 oz Cranberry Juice",
@@ -310,6 +326,7 @@
       },
       {
         "name": "Weng Weng",
+        "image": "public/images/mixes/wengweng.jpg",
         "alcoholLevel": "Very Strong",
         "recipe": [
           "2 shots San Miguel Gin",
@@ -333,6 +350,7 @@
       },
       {
         "name": "Shembot",
+        "image": "public/images/mixes/shembot.jpg",
         "alcoholLevel": "Medium",
         "recipe": [
           "1 bottle San Miguel Gin",
@@ -350,6 +368,7 @@
       },
       {
         "name": "Expired",
+        "image": "public/images/mixes/expired.jpg",
         "alcoholLevel": "Strong",
         "recipe": [
           "2 bottles Red Horse Beer",
@@ -368,6 +387,7 @@
       },
       {
         "name": "Destroso",
+        "image": "public/images/mixes/destroso.jpg",
         "alcoholLevel": "Strong",
         "recipe": [
           "1 bottle Red Horse Beer",
