@@ -409,6 +409,7 @@
     "readyToDrink": [
       {
         "name": "Red Horse Beer",
+        "image": "public/images/ready_to_drink/red_horse.jpeg",
         "category": "Beer",
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Malty", "Refreshing"],
@@ -417,6 +418,7 @@
       },
       {
         "name": "Alfonso",
+        "image": "public/images/ready_to_drink/alfonso.jpg",
         "category": "Brandy",
         "alcoholLevel": "Medium",
         "flavorProfile": ["Sweet", "Fruity", "Smooth"],
@@ -425,6 +427,7 @@
       },
       {
         "name": "Lemon Dou",
+        "image": "public/images/ready_to_drink/lemon_dou.webp",
         "category": "Chuhai (Japanese Cocktail)",
         "alcoholLevel": "Medium",
         "flavorProfile": ["Citrus", "Sweet", "Refreshing"],
@@ -433,6 +436,7 @@
       },
       {
         "name": "Smirnoff Mule",
+        "image": "public/images/ready_to_drink/smirnoff_mule.webp",
         "category": "Vodka",
         "alcoholLevel": "Light",
         "flavorProfile": ["Smooth", "Slightly Sweet"],
@@ -441,6 +445,7 @@
       },
       {
         "name": "Absolut Vodka",
+        "image": "public/images/ready_to_drink/absolut_vodka.webp",
         "category": "Vodka",
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Smooth", "Neutral"],
@@ -449,6 +454,7 @@
       },
       {
         "name": "Soju",
+        "image": "public/images/ready_to_drink/soju.webp",
         "category": "Soju",
         "alcoholLevel": "Medium",
         "flavorProfile": ["Sweet", "Smooth", "Light"],
@@ -457,6 +463,7 @@
       },
       {
         "name": "Charles & James Light",
+        "image": "public/images/ready_to_drink/charles_and_james.webp",
         "category": "Brandy",
         "alcoholLevel": "Medium",
         "flavorProfile": ["Sweet", "Fruity", "Smooth"],
@@ -465,6 +472,7 @@
       },
       {
         "name": "Tanduay Ice",
+        "image": "public/images/ready_to_drink/tanduay_ice.webp",
         "category": "Spirit",
         "alcoholLevel": "Medium",
         "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
@@ -473,6 +481,7 @@
       },
       {
         "name": "San Mig Light",
+        "image": "public/images/ready_to_drink/sanmig_light.webp",
         "category": "Beer",
         "alcoholLevel": "Light",
         "flavorProfile": ["Crisp", "Refreshing", "Light"],
@@ -481,6 +490,7 @@
       },
       {
         "name": "Primera Light",
+        "image": "public/images/ready_to_drink/primera_light.jpeg",
         "category": "Brandy",
         "alcoholLevel": "Medium",
         "flavorProfile": ["Crisp", "Refreshing", "Light"],
@@ -489,6 +499,7 @@
       },
       {
         "name": "San Miguel Pale Pilsen",
+        "image": "public/images/ready_to_drink/san_miguel_pilsen.png",
         "category": "Beer",
         "alcoholLevel": "Medium",
         "flavorProfile": ["Crisp", "Refreshing", "Light"],
@@ -497,6 +508,7 @@
       },
       {
         "name": "Ginebra San Miguel",
+        "image": "public/images/ready_to_drink/ginebra_sanmiguel.webp",
         "category": "Gin",
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Herbal", "Citrus"],
@@ -505,6 +517,7 @@
       },
       {
         "name": "Emperador Light",
+        "image": "public/images/ready_to_drink/emperador_light.webp",
         "category": "Brandy",
         "alcoholLevel": "Medium",
         "flavorProfile": ["Smooth", "Fruity", "Light"],
@@ -513,6 +526,7 @@
       },
       {
         "name": "Jose Cuervo",
+        "image": "public/images/ready_to_drink/jose_cuervo.webp",
         "category": "Tequila",
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Earthy", "Citrus"],
@@ -521,6 +535,7 @@
       },
       {
         "name": "Jack Daniels",
+        "image": "public/images/ready_to_drink/jack_daniels.webp",
         "category": "Whiskey",
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Smoky", "Sweet"],
@@ -529,6 +544,7 @@
       },
       {
         "name": "Johnnie Walker Black Label",
+        "image": "public/images/ready_to_drink/black_label_jw.webp",
         "category": "Whiskey",
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Smoky", "Rich"],
@@ -537,6 +553,7 @@
       },
       {
         "name": "Jägermeister",
+        "image": "public/images/ready_to_drink/jagermeister.webp",
         "category": "Herbal Liqueur",
         "alcoholLevel": "Strong",
         "flavorProfile": ["Herbal", "Sweet", "Spicy"],
