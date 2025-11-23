@@ -1,3 +1,5 @@
+import BartenderAnimation from "./BartenderAnimation";
+
 const Hero = () => {
   const scrollToPreferencesForm = () => {
     const element = document.getElementById("preferencesForm");
@@ -17,6 +19,9 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-background">
+      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-full max-w-2xl opacity-30">
+        <BartenderAnimation />
+      </div>
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8">
         <div className="space-y-6">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight text-balance">
