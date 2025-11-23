@@ -9,9 +9,13 @@ const drinkTypes = ["Mixes", "Ready to Drink"];
 
 interface PreferencesFormProps {
   onRecommendations: (drinks: Drink[]) => void;
+  setLoading: (value: boolean) => void;
 }
 
-const PreferencesForm = ({ onRecommendations }: PreferencesFormProps) => {
+const PreferencesForm = ({
+  onRecommendations,
+  setLoading,
+}: PreferencesFormProps) => {
   const [drinkType, setDrinkType] = useState(drinkTypes[0]);
   const [mood, setMood] = useState<string[]>([moods[0]]);
   const [flavor, setFlavor] = useState<string[]>([flavors[0]]);
@@ -30,8 +34,30 @@ const PreferencesForm = ({ onRecommendations }: PreferencesFormProps) => {
     }
   };
 
+  const scrolToRecommendations = () => {
+    const element = document.getElementById("recommendationSection");
+
+    if (element) {
+      const offset = 120;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    setLoading(true);
+
+    setTimeout(() => {
+      scrolToRecommendations();
+    }, 1000);
 
     const preferences = {
       drinkType,
@@ -41,10 +67,11 @@ const PreferencesForm = ({ onRecommendations }: PreferencesFormProps) => {
       budget,
     };
 
-    const recommendations = getRecommendations(preferences);
-    onRecommendations(recommendations);
-
-    console.log({ preferences, recommendations });
+    setTimeout(() => {
+      const recommendations = getRecommendations(preferences);
+      onRecommendations(recommendations);
+      setLoading(false);
+    }, 2500);
   };
 
   return (

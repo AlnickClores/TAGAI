@@ -50,7 +50,7 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
           <img
             src={drink.image || placeholder}
             alt={drink.name}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
 

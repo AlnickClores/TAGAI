@@ -8,7 +8,7 @@ import type { Drink } from "./utils/drinkRecommendations";
 
 function App() {
   const [recommendations, setRecommendations] = useState<Drink[]>([]);
-
+  const [loading, setLoading] = useState(false);
   const handleRecommendations = (drinks: Drink[]) => {
     setRecommendations(drinks);
   };
@@ -19,8 +19,11 @@ function App() {
         <Navbar />
         <div className="flex flex-col gap-7">
           <Hero />
-          <PreferencesForm onRecommendations={handleRecommendations} />
-          <Recommendation recommendations={recommendations} />
+          <PreferencesForm
+            setLoading={setLoading}
+            onRecommendations={handleRecommendations}
+          />
+          <Recommendation loading={loading} recommendations={recommendations} />
         </div>
 
         <Footer />
