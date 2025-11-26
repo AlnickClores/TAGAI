@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getRecommendations, type Drink } from "../utils/drinkRecommendations";
+import { icons } from "../assets/icons/icons";
 
 const moods = ["Happy", "Relaxed", "Energetic", "Romantic", "Casual"];
 const flavors = ["Fruity", "Bold", "Sweet", "Citrus", "Neutral"];
@@ -50,6 +51,24 @@ const PreferencesForm = ({
     }
   };
 
+  useEffect(() => {
+    console.log("Current selected moods:", mood);
+    console.log("Current selected flavors:", flavor);
+  }, [mood, flavor]);
+
+  const handleSetDrinkType = (type: string) => {
+    setDrinkType(type);
+    console.log("Selected drink type:", type);
+  };
+
+  const handleToggleMood = (m: string) => {
+    toggleSelection(m, mood, setMood);
+  };
+
+  const handleToggleFlavor = (f: string) => {
+    toggleSelection(f, flavor, setFlavor);
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -78,7 +97,7 @@ const PreferencesForm = ({
     <form
       id="preferencesForm"
       onSubmit={handleSubmit}
-      className="space-y-6 p-6 mt-15 bg-card rounded-xl shadow-md border border-secondary"
+      className="space-y-8 p-8 mt-15 bg-card rounded-2xl shadow-lg border border-secondary"
     >
       <h1 className="text-xl font-semibold text-text">
         Tell Me About Your Preferred Drink
@@ -88,55 +107,104 @@ const PreferencesForm = ({
         <label className="font-medium text-sm">Drink Type</label>
         <div className="flex gap-6">
           {drinkTypes.map((type) => (
-            <label
+            <button
+              type="button"
               key={type}
-              className="flex items-center gap-2 cursor-pointer"
+              onClick={() => handleSetDrinkType(type)}
+              className={`flex items-center gap-3 px-3 py-2 rounded-xl cursor-pointer transition-all
+          bg-secondary border 
+          ${
+            type === drinkType
+              ? "border-accent"
+              : "border-transparent opacity-50 hover:opacity-80"
+          }
+        `}
             >
-              <input
-                type="radio"
-                name="drinkType"
-                value={type}
-                checked={drinkType === type}
-                onChange={(e) => setDrinkType(e.target.value)}
-                className="w-4 h-4 cursor-pointer"
-              />
+              <div>
+                {type === "Mixes" ? icons.mixesIcon : icons.readyToDrinkIcon}
+              </div>
               <span className="text-sm">{type}</span>
-            </label>
+            </button>
           ))}
         </div>
       </div>
 
-      <div className="flex flex-col space-y-3">
-        <label className="font-medium text-sm">What's your mood?</label>
-        <div className="grid grid-cols-2 gap-3">
-          {moods.map((m) => (
-            <label key={m} className="flex items-center gap-2 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={mood.includes(m)}
-                onChange={() => toggleSelection(m, mood, setMood)}
-                className="w-4 h-4 cursor-pointer"
-              />
-              <span className="text-sm">{m}</span>
-            </label>
-          ))}
-        </div>
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 space-y-3 space-x-3 ">
+        <div className="flex flex-col space-y-3">
+          <label className="font-medium text-sm">What's your mood?</label>
 
-      <div className="flex flex-col space-y-3">
-        <label className="font-medium text-sm">Favorite flavor?</label>
-        <div className="grid grid-cols-2 gap-3">
-          {flavors.map((f) => (
-            <label key={f} className="flex items-center gap-2 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={flavor.includes(f)}
-                onChange={() => toggleSelection(f, flavor, setFlavor)}
-                className="w-4 h-4 cursor-pointer"
-              />
-              <span className="text-sm">{f}</span>
-            </label>
-          ))}
+          <div className="grid grid-cols-2 gap-3">
+            {moods.map((m) => (
+              <button
+                key={m}
+                type="button"
+                onClick={() => handleToggleMood(m)}
+                className={`
+          flex items-center gap-3 px-3 py-2 rounded-xl transition-all border
+          bg-secondary cursor-pointer
+          ${
+            mood.includes(m)
+              ? "border-accent bg-primary/10"
+              : "border-transparent opacity-50 hover:opacity-80"
+          }
+        `}
+              >
+                <span
+                  className={mood.includes(m) ? "text-accent" : "text-text"}
+                >
+                  {m === "Happy"
+                    ? icons.happyIcon
+                    : m === "Relaxed"
+                    ? icons.relaxedIcon
+                    : m === "Energetic"
+                    ? icons.energeticIcon
+                    : m === "Romantic"
+                    ? icons.romanticIcon
+                    : icons.casualIcon}
+                </span>
+
+                <span className="text-sm">{m}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col space-y-3">
+          <label className="font-medium text-sm">Desired flavor?</label>
+          <div className="grid grid-cols-2 gap-3">
+            {flavors.map((f) => (
+              <button
+                key={f}
+                type="button"
+                onClick={() => handleToggleFlavor(f)}
+                className={`
+          flex items-center gap-3 px-3 py-2 rounded-xl transition-all border
+          bg-secondary cursor-pointer
+          ${
+            flavor.includes(f)
+              ? "border-accent bg-primary/10"
+              : "border-transparent opacity-50 hover:opacity-80"
+          }
+        `}
+              >
+                <span
+                  className={flavor.includes(f) ? "text-accent" : "text-text"}
+                >
+                  {f === "Fruity"
+                    ? icons.fruityIcon
+                    : f === "Sweet"
+                    ? icons.sweetIcon
+                    : f === "Neutral"
+                    ? icons.neutralIcon
+                    : f === "Bold"
+                    ? icons.boldIcon
+                    : icons.citrusIcon}
+                </span>
+
+                <span className="text-sm">{f}</span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
