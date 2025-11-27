@@ -17,7 +17,7 @@ function App() {
     <div className="min-h-screen">
       <div className="mx-auto max-w-7xl px-4">
         <Navbar />
-        <div className="flex flex-col gap-7">
+        <div className="flex flex-col gap-7 mb-24">
           <Hero />
           <PreferencesForm
             setLoading={setLoading}

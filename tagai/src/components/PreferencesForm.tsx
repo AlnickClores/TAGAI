@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { getRecommendations, type Drink } from "../utils/drinkRecommendations";
 import { icons } from "../assets/icons/icons";
 
@@ -51,14 +51,8 @@ const PreferencesForm = ({
     }
   };
 
-  useEffect(() => {
-    console.log("Current selected moods:", mood);
-    console.log("Current selected flavors:", flavor);
-  }, [mood, flavor]);
-
   const handleSetDrinkType = (type: string) => {
     setDrinkType(type);
-    console.log("Selected drink type:", type);
   };
 
   const handleToggleMood = (m: string) => {
@@ -115,7 +109,7 @@ const PreferencesForm = ({
           bg-secondary border 
           ${
             type === drinkType
-              ? "border-accent"
+              ? "border-accent font-bold"
               : "border-transparent opacity-50 hover:opacity-80"
           }
         `}
@@ -149,9 +143,7 @@ const PreferencesForm = ({
           }
         `}
               >
-                <span
-                  className={mood.includes(m) ? "text-accent" : "text-text"}
-                >
+                <span>
                   {m === "Happy"
                     ? icons.happyIcon
                     : m === "Relaxed"
@@ -182,14 +174,12 @@ const PreferencesForm = ({
           bg-secondary cursor-pointer
           ${
             flavor.includes(f)
-              ? "border-accent bg-primary/10"
+              ? "border-accent bg-primary/10 font-bold"
               : "border-transparent opacity-50 hover:opacity-80"
           }
         `}
               >
-                <span
-                  className={flavor.includes(f) ? "text-accent" : "text-text"}
-                >
+                <span>
                   {f === "Fruity"
                     ? icons.fruityIcon
                     : f === "Sweet"
@@ -208,34 +198,52 @@ const PreferencesForm = ({
         </div>
       </div>
 
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col space-y-3">
         <label className="font-medium text-sm">Alcohol level?</label>
-        <select
-          value={alcohol}
-          onChange={(e) => setAlcohol(e.target.value)}
-          className="w-full p-3 rounded-lg bg-background text-text"
-        >
+        <div className="grid grid-cols-3 gap-3">
           {alcoholLevels.map((a) => (
-            <option key={a} value={a}>
-              {a}
-            </option>
+            <button
+              key={a}
+              type="button"
+              onClick={() => setAlcohol(a)}
+              className={`
+          flex items-center justify-center px-3 py-2 rounded-xl transition-all border
+          bg-secondary cursor-pointer
+          ${
+            alcohol === a
+              ? "border-accent bg-primary/10 font-bold"
+              : "border-transparent opacity-50 hover:opacity-80"
+          }
+        `}
+            >
+              <span>{a}</span>
+            </button>
           ))}
-        </select>
+        </div>
       </div>
 
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col space-y-3">
         <label className="font-medium text-sm">Your budget?</label>
-        <select
-          value={budget}
-          onChange={(e) => setBudget(e.target.value)}
-          className="w-full p-3 rounded-lg bg-background text-text"
-        >
+        <div className="grid grid-cols-2 gap-3">
           {budgets.map((b) => (
-            <option key={b} value={b}>
-              {b}
-            </option>
+            <button
+              key={b}
+              type="button"
+              onClick={() => setBudget(b)}
+              className={`
+          flex items-center justify-center px-3 py-2 rounded-xl transition-all border
+          bg-secondary cursor-pointer
+          ${
+            budget === b
+              ? "border-accent bg-primary/10 font-bold"
+              : "border-transparent opacity-50 hover:opacity-80"
+          }
+        `}
+            >
+              <span>{b}</span>
+            </button>
           ))}
-        </select>
+        </div>
       </div>
 
       <button
