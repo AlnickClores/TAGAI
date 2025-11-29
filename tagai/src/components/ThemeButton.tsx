@@ -6,7 +6,7 @@ const ThemeButton = () => {
   return (
     <label
       className="
-        w-[50px] h-[26px] bg-[#111] dark:bg-secondary rounded-full 
+        w-[50px] h-[26px] bg-primary dark:bg-secondary rounded-full 
         flex items-center justify-between p-[5px]
         cursor-pointer relative
       "
@@ -14,7 +14,7 @@ const ThemeButton = () => {
       <input
         type="checkbox"
         className="absolute opacity-0"
-        checked={theme === "dark"}
+        checked={theme === "light"}
         onChange={toggleTheme}
       />
 
@@ -25,7 +25,7 @@ const ThemeButton = () => {
         className={`
           absolute bg-white dark:bg-primary w-[22px] h-[22px] rounded-full top-0.5 left-0.5
           transition-transform duration-200
-          ${theme === "dark" ? "translate-x-6" : "translate-x-0"}
+          ${theme === "light" ? "translate-x-6" : "translate-x-0"}
         `}
       />
     </label>
