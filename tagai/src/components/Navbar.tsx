@@ -2,16 +2,17 @@ import ThemeButton from "./ThemeButton";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center space-x-2 sticky top-0 z-50 bg-background/80 p-3">
-      <div className="flex items-center gap-2">
-        <h1 className="bg-primary p-3 rounded-lg">🍻</h1>
-        <div>
-          <h1 className="text-2xl uppercase font-bold tracking-wider text-primary">
-            Tagai
+    <div className="flex justify-between items-center sticky top-0 z-50 bg-background/80 backdrop-blur-sm p-3 md:p-4 gap-2 md:gap-4">
+      <a href="/" className="flex items-center gap-2 md:gap-3 group">
+        <div className="flex flex-col">
+          <h1 className="text-xl md:text-2xl font-bold tracking-wide text-primary transition-colors duration-200 group-hover:text-primary/80">
+            TAGAI
           </h1>
-          <p className="text-sm tracking-tight">AI Filipino Bartender</p>
+          <p className="text-xs md:text-sm text-muted-foreground leading-tight hidden sm:block">
+            AI Bartender
+          </p>
         </div>
-      </div>
+      </a>
 
       <ThemeButton />
     </div>

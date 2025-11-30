@@ -38,7 +38,7 @@ const Hero = () => {
         <div className="pt-8">
           <button
             onClick={scrollToPreferencesForm}
-            className="group relative inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
+            className="group relative inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
           >
             <span>Explore Recommendations</span>
             <svg
