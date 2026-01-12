@@ -12,7 +12,7 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50 backdrop-blur-sm">
       <div className="bg-card border border-secondary rounded-2xl shadow-2xl max-w-2xl max-h-[90vh] overflow-y-auto w-full">
-        <div className="sticky top-0 bg-card border-b border-secondary/50 p-6">
+        <div className="sticky top-0 bg-card border-b border-secondary/50 p-6 z-50">
           <div className="flex justify-between items-start gap-4">
             <div className="flex-1 min-w-0">
               <h2 className="text-3xl font-bold text-text mb-3 wrap-break-word">
