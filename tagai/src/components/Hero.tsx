@@ -30,15 +30,15 @@ const Hero = () => {
           </h1>
 
           <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">
-            Let TAGAI's recommendation engine guide you to the ideal beverage
-            tailored to your mood and preferences.
+            Let TAGAI guide you to the ideal beverage tailored to your mood and
+            preferences.
           </p>
         </div>
 
         <div className="pt-8">
           <button
             onClick={scrollToPreferencesForm}
-            className="group relative inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+            className="group relative inline-flex items-center gap-2 px-8 py-4 border border-primary bg-primary/10 text-primary font-medium rounded-full transition-all duration-300 hover:shadow-lg cursor-pointer"
           >
             <span>Explore Recommendations</span>
             <svg
@@ -47,7 +47,7 @@ const Hero = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="size-6"
+              className="size-5 animate-bounce"
             >
               <path
                 strokeLinecap="round"
