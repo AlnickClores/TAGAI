@@ -88,6 +88,7 @@ const alcoholLevels = [
     color: "#F87171",
   },
 ];
+
 const budgets = ["₱100 - 150", "₱150 - 250", "₱250 - 500", "₱500+"];
 
 interface PreferencesFormProps {
@@ -103,7 +104,7 @@ const PreferencesForm = ({
   const [mood, setMood] = useState<string[]>([moods[0].label]);
   const [flavor, setFlavor] = useState<string[]>([flavors[0].label]);
   const [alcohol, setAlcohol] = useState(alcoholLevels[0].level);
-  const [budget, setBudget] = useState(budgets[1]);
+  const [budget, setBudget] = useState(budgets[0]);
 
   const toggleSelection = (
     item: string,
@@ -111,7 +112,9 @@ const PreferencesForm = ({
     setState: (s: string[]) => void,
   ) => {
     if (state.includes(item)) {
-      setState(state.filter((s) => s !== item));
+      if (state.length > 1) {
+        setState(state.filter((s) => s !== item));
+      }
     } else {
       setState([...state, item]);
     }
