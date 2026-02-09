@@ -16,10 +16,7 @@ const Recommendation = ({ recommendations, loading }: RecommendationProps) => {
   if (!loading && topThreeDrinks.length === 0) return null;
 
   return (
-    <div
-      id="recommendationSection"
-      className="mt-36 space-y-8 p-6 rounded-xl border-2 border-secondary border-dashed"
-    >
+    <div id="recommendationSection" className="mt-36 space-y-8 rounded-xl">
       {loading ? (
         <div className="flex flex-col items-center gap-6 py-20">
           <BartenderAnimation />
