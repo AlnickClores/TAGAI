@@ -27,7 +27,7 @@
         ],
         "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
         "mood": ["happy", "casual"],
-        "price": "₱160-₱200"
+        "price": "₱160 - 200"
       },
       {
         "name": "Boracay",
@@ -47,7 +47,7 @@
         ],
         "flavorProfile": ["Sweet", "Creamy", "Rich"],
         "mood": ["relaxed", "casual"],
-        "price": "₱150-₱250"
+        "price": "₱150 - 250"
       },
       {
         "name": "Velocity",
@@ -67,7 +67,7 @@
         ],
         "flavorProfile": ["Fruity", "Citrus", "Refreshing"],
         "mood": ["happy", "casual", "energetic"],
-        "price": "₱120-₱180"
+        "price": "₱120 - 180"
       },
       {
         "name": "Kagatan",
@@ -82,12 +82,12 @@
         ],
         "flavorProfile": ["Creamy", "Rich", "Bold"],
         "mood": ["relaxed", "romantic"],
-        "price": "₱140-₱220"
+        "price": "₱140 - 220"
       },
       {
         "name": "Primera Sunburst",
         "image": " /images/mixes/primera_sunburst.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": [
           "60ml Primera Light Brandy",
           "30ml Sugar Syrup",
@@ -102,12 +102,12 @@
         ],
         "flavorProfile": ["Citrus", "Sweet", "Refreshing", "Fruity"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱110-₱150"
+        "price": "₱110 - 150"
       },
       {
         "name": "Gin Pomelo",
         "image": " /images/mixes/gin_pomelo.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": ["San Miguel Gin", "Pomelo Juice Powder", "1L Water", "Ice"],
         "instructions": [
           "Add ice to a pitcher and fill it halfway with water.",
@@ -117,7 +117,7 @@
         ],
         "flavorProfile": ["Fruity", "Sweet", "Refreshing", "Citrus"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱100-₱140"
+        "price": "₱100 - 140"
       },
       {
         "name": "RPG",
@@ -138,7 +138,7 @@
         ],
         "flavorProfile": ["Fruity", "Refreshing", "Bold", "Sweet"],
         "mood": ["happy", "casual", "energetic"],
-        "price": "₱130-₱180"
+        "price": "₱130 - 180"
       },
       {
         "name": "Kisay",
@@ -160,7 +160,7 @@
         ],
         "flavorProfile": ["Citrus", "Refreshing", "Bold", "Fruity"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Red Alert",
@@ -180,12 +180,12 @@
         ],
         "flavorProfile": ["Citrus", "Sweet", "Bold", "Refreshing"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Tia Maria’s Zombie",
         "image": " /images/mixes/tia_marias_zombie.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": ["San Miguel Gin", "Sprite", "Zesto Strawberry Juice"],
         "instructions": [
           "Fill a glass or pitcher with ice.",
@@ -196,12 +196,12 @@
         ],
         "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Toma Collins",
         "image": " /images/mixes/toma_collins.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": [
           "San Miguel Gin",
           "Honey",
@@ -218,12 +218,12 @@
         ],
         "flavorProfile": ["Citrus", "Sweet", "Refreshing", "Herbal"],
         "mood": ["happy", "relaxed", "romantic"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Soju Yakult Cocktail",
         "image": " /images/mixes/soju_yakult.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": ["Soju (Any Flavor)", "Yakult Drink", "Sprite"],
         "instructions": [
           "Fill a glass with ice.",
@@ -234,12 +234,12 @@
         ],
         "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Strawberry Soju Cocktail",
         "image": " /images/mixes/strawberry_soju.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": [
           "3 oz Strawberry Soju",
           "4 oz Strawberry Calpico",
@@ -256,12 +256,12 @@
         ],
         "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
         "mood": ["happy", "casual", "romantic"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Blood Orange Paloma",
         "image": " /images/mixes/blood_orange_paloma.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": [
           "3 oz Blood Orange Juice",
           "1.5 oz Tequila",
@@ -278,12 +278,12 @@
         ],
         "flavorProfile": ["Citrus", "Refreshing", "Slightly Bitter"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱130-₱200"
+        "price": "₱130 - 200"
       },
       {
         "name": "Mango Melona Soju Cocktail",
         "image": " /images/mixes/mango_melona_soju.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": [
           "4 oz Mango Soju",
           "4 oz Sprite",
@@ -298,12 +298,12 @@
         ],
         "flavorProfile": ["Sweet", "Fruity", "Creamy", "Refreshing"],
         "mood": ["happy", "casual", "fun"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Cranberry Apple Mojito",
         "image": " /images/mixes/cranberry_apple_mojito.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": [
           "1 oz Cranberry Juice",
           "2 oz Apple Juice",
@@ -322,7 +322,7 @@
         ],
         "flavorProfile": ["Citrus", "Fruity", "Refreshing", "Slightly Sweet"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱120-₱180"
+        "price": "₱120 - 180"
       },
       {
         "name": "Weng Weng",
@@ -346,12 +346,12 @@
         ],
         "flavorProfile": ["Fruity", "Sweet", "Bold"],
         "mood": ["happy", "casual"],
-        "price": "₱200-₱300"
+        "price": "₱200 - 300"
       },
       {
         "name": "Shembot",
         "image": " /images/mixes/shembot.jpg",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "recipe": [
           "1 bottle San Miguel Gin",
           "1 sachet Melon Juice Powder",
@@ -364,7 +364,7 @@
         ],
         "flavorProfile": ["Sweet", "Fruity", "Creamy"],
         "mood": ["happy", "casual", "fun"],
-        "price": "₱100-₱150"
+        "price": "₱100 - 150"
       },
       {
         "name": "Expired",
@@ -383,7 +383,7 @@
         ],
         "flavorProfile": ["Bold", "Refreshing", "Slightly Minty"],
         "mood": ["casual", "energetic"],
-        "price": "₱120-₱180"
+        "price": "₱120 - 180"
       },
       {
         "name": "Destroso",
@@ -403,7 +403,7 @@
         ],
         "flavorProfile": ["Fruity", "Sweet", "Bold", "Refreshing"],
         "mood": ["happy", "casual"],
-        "price": "₱110-₱160"
+        "price": "₱110 - ₱160"
       }
     ],
     "readyToDrink": [
@@ -414,25 +414,25 @@
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Malty", "Refreshing"],
         "mood": ["happy", "casual"],
-        "price": "₱45-₱65"
+        "price": "₱45 - ₱65"
       },
       {
         "name": "Alfonso",
         "image": " /images/ready_to_drink/alfonso.jpg",
         "category": "Brandy",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "flavorProfile": ["Sweet", "Fruity", "Smooth"],
         "mood": ["happy", "relaxed", "casual"],
-        "price": "₱299-₱419"
+        "price": "₱299 -  ₱419"
       },
       {
         "name": "Lemon Dou",
         "image": " /images/ready_to_drink/lemon_dou.webp",
         "category": "Chuhai (Japanese Cocktail)",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "flavorProfile": ["Citrus", "Sweet", "Refreshing"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱100-₱250"
+        "price": "₱100 - ₱250"
       },
       {
         "name": "Smirnoff Mule",
@@ -441,7 +441,7 @@
         "alcoholLevel": "Light",
         "flavorProfile": ["Smooth", "Slightly Sweet"],
         "mood": ["happy", "energetic", "casual"],
-        "price": "₱100-₱250"
+        "price": "₱100 - ₱250"
       },
       {
         "name": "Absolut Vodka",
@@ -456,28 +456,28 @@
         "name": "Soju",
         "image": " /images/ready_to_drink/soju.webp",
         "category": "Soju",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "flavorProfile": ["Sweet", "Smooth", "Light"],
         "mood": ["happy", "relaxed", "casual"],
-        "price": "₱150-₱300"
+        "price": "₱150 - 300"
       },
       {
         "name": "Charles & James Light",
         "image": " /images/ready_to_drink/charles_and_james.webp",
         "category": "Brandy",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "flavorProfile": ["Sweet", "Fruity", "Smooth"],
         "mood": ["romantic", "happy", "casual"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Tanduay Ice",
         "image": " /images/ready_to_drink/tanduay_ice.webp",
         "category": "Spirit",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
         "mood": ["happy", "energetic", "casual"],
-        "price": "₱34-₱60"
+        "price": "₱34 - 60"
       },
       {
         "name": "San Mig Light",
@@ -486,25 +486,25 @@
         "alcoholLevel": "Light",
         "flavorProfile": ["Crisp", "Refreshing", "Light"],
         "mood": ["happy", "relaxed", "casual"],
-        "price": "₱49-₱60"
+        "price": "₱49 - 60"
       },
       {
         "name": "Primera Light",
         "image": " /images/ready_to_drink/primera_light.jpeg",
         "category": "Brandy",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "flavorProfile": ["Crisp", "Refreshing", "Light"],
         "mood": ["happy", "relaxed", "casual"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "San Miguel Pale Pilsen",
         "image": " /images/ready_to_drink/san_miguel_pilsen.png",
         "category": "Beer",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "flavorProfile": ["Crisp", "Refreshing", "Light"],
         "mood": ["happy", "casual", "relaxed"],
-        "price": "₱41-₱60"
+        "price": "₱41 - 60"
       },
       {
         "name": "Ginebra San Miguel",
@@ -513,16 +513,16 @@
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Herbal", "Citrus"],
         "mood": ["happy", "energetic", "casual"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Emperador Light",
         "image": " /images/ready_to_drink/emperador_light.webp",
         "category": "Brandy",
-        "alcoholLevel": "Medium",
+        "alcoholLevel": "Moderate",
         "flavorProfile": ["Smooth", "Fruity", "Light"],
         "mood": ["happy", "relaxed", "casual"],
-        "price": "₱100-₱250"
+        "price": "₱100 - 250"
       },
       {
         "name": "Jose Cuervo",
