@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.0.0",
-    "lastUpdated": "2025-11-13",
+    "version": "1.0.1",
+    "lastUpdated": "2026-02-11",
     "totalDrinks": 37,
     "categories": ["mixes", "readyToDrink"],
     "author": "TAGAI AI",
@@ -25,8 +25,8 @@
           "Top it off with Sprite.",
           "Stir gently and enjoy!"
         ],
-        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
-        "mood": ["happy", "casual"],
+        "flavorProfile": ["Sweet", "Fruity", "Neutral"],
+        "mood": ["Happy", "Casual"],
         "price": "₱160 - 200"
       },
       {
@@ -45,8 +45,8 @@
           "Add ice if desired.",
           "Stir gently and enjoy!"
         ],
-        "flavorProfile": ["Sweet", "Creamy", "Rich"],
-        "mood": ["relaxed", "casual"],
+        "flavorProfile": ["Sweet", "Bold", "Neutral"],
+        "mood": ["Relaxed", "Casual"],
         "price": "₱150 - 250"
       },
       {
@@ -65,8 +65,8 @@
           "Squeeze a slice of lemon.",
           "Drink!"
         ],
-        "flavorProfile": ["Fruity", "Citrus", "Refreshing"],
-        "mood": ["happy", "casual", "energetic"],
+        "flavorProfile": ["Fruity", "Citrus", "Neutral"],
+        "mood": ["Happy", "Casual", "Energetic"],
         "price": "₱120 - 180"
       },
       {
@@ -80,8 +80,8 @@
           "Mix in the rum at the end.",
           "Stir and enjoy!"
         ],
-        "flavorProfile": ["Creamy", "Rich", "Bold"],
-        "mood": ["relaxed", "romantic"],
+        "flavorProfile": ["Sweet", "Bold", "Neutral"],
+        "mood": ["Relaxed", "Romantic"],
         "price": "₱140 - 220"
       },
       {
@@ -100,8 +100,8 @@
           "Pour the brandy and soda water last.",
           "Stir and enjoy!"
         ],
-        "flavorProfile": ["Citrus", "Sweet", "Refreshing", "Fruity"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Citrus", "Sweet", "Fruity"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱110 - 150"
       },
       {
@@ -115,8 +115,8 @@
           "Optional: Carefully light up the gin for a few seconds to slightly burn off the alcohol. Pour a small amount into the pitcher and repeat 3–5 times.",
           "Stir the mixture and serve chilled."
         ],
-        "flavorProfile": ["Fruity", "Sweet", "Refreshing", "Citrus"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Fruity", "Sweet", "Citrus"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱100 - 140"
       },
       {
@@ -136,8 +136,8 @@
           "Slowly pour in the gin and mix well.",
           "Serve cold and enjoy with friends — handle with care, it hits hard!"
         ],
-        "flavorProfile": ["Fruity", "Refreshing", "Bold", "Sweet"],
-        "mood": ["happy", "casual", "energetic"],
+        "flavorProfile": ["Fruity", "Bold", "Sweet"],
+        "mood": ["Happy", "Casual", "Energetic"],
         "price": "₱130 - 180"
       },
       {
@@ -158,8 +158,8 @@
           "Top it off with Sprite for a fizzy, refreshing finish.",
           "Stir lightly and serve chilled."
         ],
-        "flavorProfile": ["Citrus", "Refreshing", "Bold", "Fruity"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Citrus", "Bold", "Fruity"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱100 - 250"
       },
       {
@@ -178,12 +178,12 @@
           "Add ice if desired and serve immediately while chilled.",
           "Optional: Lightly torch the gin before mixing to reduce its alcohol strength — only if you want a smoother kick."
         ],
-        "flavorProfile": ["Citrus", "Sweet", "Bold", "Refreshing"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Citrus", "Sweet", "Bold"],
+        "mood": ["Happy", "Casual", "Energetic"],
         "price": "₱100 - 250"
       },
       {
-        "name": "Tia Maria’s Zombie",
+        "name": "Tia Maria's Zombie",
         "image": " /images/mixes/tia_marias_zombie.jpg",
         "alcoholLevel": "Moderate",
         "recipe": ["San Miguel Gin", "Sprite", "Zesto Strawberry Juice"],
@@ -194,8 +194,8 @@
           "Top off with Sprite for a fizzy finish.",
           "Serve chilled."
         ],
-        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Sweet", "Fruity", "Neutral"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱100 - 250"
       },
       {
@@ -216,8 +216,8 @@
           "Pour in San Miguel Gin and top off with tonic water.",
           "Stir gently and serve chilled."
         ],
-        "flavorProfile": ["Citrus", "Sweet", "Refreshing", "Herbal"],
-        "mood": ["happy", "relaxed", "romantic"],
+        "flavorProfile": ["Citrus", "Sweet", "Neutral"],
+        "mood": ["Happy", "Relaxed", "Romantic"],
         "price": "₱100 - 250"
       },
       {
@@ -232,8 +232,8 @@
           "Top with Sprite for a fizzy finish.",
           "Serve chilled."
         ],
-        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Sweet", "Fruity", "Neutral"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱100 - 250"
       },
       {
@@ -254,8 +254,8 @@
           "Garnish with diced strawberries.",
           "Serve chilled."
         ],
-        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
-        "mood": ["happy", "casual", "romantic"],
+        "flavorProfile": ["Sweet", "Fruity", "Neutral"],
+        "mood": ["Happy", "Casual", "Romantic"],
         "price": "₱100 - 250"
       },
       {
@@ -276,8 +276,8 @@
           "Top with club soda.",
           "Garnish with blood orange slices and serve chilled."
         ],
-        "flavorProfile": ["Citrus", "Refreshing", "Slightly Bitter"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Citrus", "Fruity", "Bold"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱130 - 200"
       },
       {
@@ -296,8 +296,8 @@
           "Add the Mango Melona Ice Cream Bar on top.",
           "Serve immediately while the ice cream is melting slightly."
         ],
-        "flavorProfile": ["Sweet", "Fruity", "Creamy", "Refreshing"],
-        "mood": ["happy", "casual", "fun"],
+        "flavorProfile": ["Sweet", "Fruity", "Neutral"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱100 - 250"
       },
       {
@@ -320,8 +320,8 @@
           "Stir lightly and garnish with a mint sprig.",
           "Serve chilled."
         ],
-        "flavorProfile": ["Citrus", "Fruity", "Refreshing", "Slightly Sweet"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Citrus", "Fruity", "Sweet"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱120 - 180"
       },
       {
@@ -345,7 +345,7 @@
           "Serve chilled in small glasses due to high alcohol content."
         ],
         "flavorProfile": ["Fruity", "Sweet", "Bold"],
-        "mood": ["happy", "casual"],
+        "mood": ["Happy", "Casual", "Energetic"],
         "price": "₱200 - 300"
       },
       {
@@ -362,8 +362,8 @@
           "Add San Miguel Gin and shake/stir well to combine.",
           "Serve chilled over ice."
         ],
-        "flavorProfile": ["Sweet", "Fruity", "Creamy"],
-        "mood": ["happy", "casual", "fun"],
+        "flavorProfile": ["Sweet", "Fruity", "Neutral"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱100 - 150"
       },
       {
@@ -381,8 +381,8 @@
           "Add the crushed menthol candies and stir gently.",
           "Serve chilled."
         ],
-        "flavorProfile": ["Bold", "Refreshing", "Slightly Minty"],
-        "mood": ["casual", "energetic"],
+        "flavorProfile": ["Bold", "Neutral", "Citrus"],
+        "mood": ["Casual", "Energetic"],
         "price": "₱120 - 180"
       },
       {
@@ -401,8 +401,8 @@
           "Stir gently to combine.",
           "Serve chilled."
         ],
-        "flavorProfile": ["Fruity", "Sweet", "Bold", "Refreshing"],
-        "mood": ["happy", "casual"],
+        "flavorProfile": ["Fruity", "Sweet", "Bold"],
+        "mood": ["Happy", "Casual"],
         "price": "₱110 - ₱160"
       }
     ],
@@ -412,8 +412,8 @@
         "image": " /images/ready_to_drink/red_horse.jpeg",
         "category": "Beer",
         "alcoholLevel": "Strong",
-        "flavorProfile": ["Bold", "Malty", "Refreshing"],
-        "mood": ["happy", "casual"],
+        "flavorProfile": ["Bold", "Neutral", "Fruity"],
+        "mood": ["Happy", "Casual", "Energetic"],
         "price": "₱45 - ₱65"
       },
       {
@@ -421,17 +421,17 @@
         "image": " /images/ready_to_drink/alfonso.jpg",
         "category": "Brandy",
         "alcoholLevel": "Moderate",
-        "flavorProfile": ["Sweet", "Fruity", "Smooth"],
-        "mood": ["happy", "relaxed", "casual"],
-        "price": "₱299 -  ₱419"
+        "flavorProfile": ["Sweet", "Fruity", "Neutral"],
+        "mood": ["Happy", "Relaxed", "Casual"],
+        "price": "₱299 - ₱419"
       },
       {
         "name": "Lemon Dou",
         "image": " /images/ready_to_drink/lemon_dou.webp",
         "category": "Chuhai (Japanese Cocktail)",
         "alcoholLevel": "Moderate",
-        "flavorProfile": ["Citrus", "Sweet", "Refreshing"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Citrus", "Sweet", "Neutral"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱100 - ₱250"
       },
       {
@@ -439,8 +439,8 @@
         "image": " /images/ready_to_drink/smirnoff_mule.webp",
         "category": "Vodka",
         "alcoholLevel": "Light",
-        "flavorProfile": ["Smooth", "Slightly Sweet"],
-        "mood": ["happy", "energetic", "casual"],
+        "flavorProfile": ["Neutral", "Sweet", "Citrus"],
+        "mood": ["Happy", "Energetic", "Casual"],
         "price": "₱100 - ₱250"
       },
       {
@@ -448,8 +448,8 @@
         "image": " /images/ready_to_drink/absolut_vodka.webp",
         "category": "Vodka",
         "alcoholLevel": "Strong",
-        "flavorProfile": ["Bold", "Smooth", "Neutral"],
-        "mood": ["happy", "energetic", "casual"],
+        "flavorProfile": ["Bold", "Neutral"],
+        "mood": ["Happy", "Energetic", "Casual"],
         "price": "₱1000+"
       },
       {
@@ -457,8 +457,8 @@
         "image": " /images/ready_to_drink/soju.webp",
         "category": "Soju",
         "alcoholLevel": "Moderate",
-        "flavorProfile": ["Sweet", "Smooth", "Light"],
-        "mood": ["happy", "relaxed", "casual"],
+        "flavorProfile": ["Sweet", "Neutral", "Fruity"],
+        "mood": ["Happy", "Relaxed", "Casual"],
         "price": "₱150 - 300"
       },
       {
@@ -466,8 +466,8 @@
         "image": " /images/ready_to_drink/charles_and_james.webp",
         "category": "Brandy",
         "alcoholLevel": "Moderate",
-        "flavorProfile": ["Sweet", "Fruity", "Smooth"],
-        "mood": ["romantic", "happy", "casual"],
+        "flavorProfile": ["Sweet", "Fruity", "Neutral"],
+        "mood": ["Romantic", "Happy", "Casual"],
         "price": "₱100 - 250"
       },
       {
@@ -475,8 +475,8 @@
         "image": " /images/ready_to_drink/tanduay_ice.webp",
         "category": "Spirit",
         "alcoholLevel": "Moderate",
-        "flavorProfile": ["Sweet", "Fruity", "Refreshing"],
-        "mood": ["happy", "energetic", "casual"],
+        "flavorProfile": ["Sweet", "Fruity", "Neutral"],
+        "mood": ["Happy", "Energetic", "Casual"],
         "price": "₱34 - 60"
       },
       {
@@ -484,8 +484,8 @@
         "image": " /images/ready_to_drink/sanmig_light.webp",
         "category": "Beer",
         "alcoholLevel": "Light",
-        "flavorProfile": ["Crisp", "Refreshing", "Light"],
-        "mood": ["happy", "relaxed", "casual"],
+        "flavorProfile": ["Neutral", "Fruity", "Sweet"],
+        "mood": ["Happy", "Relaxed", "Casual"],
         "price": "₱49 - 60"
       },
       {
@@ -493,8 +493,8 @@
         "image": " /images/ready_to_drink/primera_light.jpeg",
         "category": "Brandy",
         "alcoholLevel": "Moderate",
-        "flavorProfile": ["Crisp", "Refreshing", "Light"],
-        "mood": ["happy", "relaxed", "casual"],
+        "flavorProfile": ["Neutral", "Sweet", "Fruity"],
+        "mood": ["Happy", "Relaxed", "Casual"],
         "price": "₱100 - 250"
       },
       {
@@ -502,8 +502,8 @@
         "image": " /images/ready_to_drink/san_miguel_pilsen.png",
         "category": "Beer",
         "alcoholLevel": "Moderate",
-        "flavorProfile": ["Crisp", "Refreshing", "Light"],
-        "mood": ["happy", "casual", "relaxed"],
+        "flavorProfile": ["Neutral", "Bold", "Fruity"],
+        "mood": ["Happy", "Casual", "Relaxed"],
         "price": "₱41 - 60"
       },
       {
@@ -511,8 +511,8 @@
         "image": " /images/ready_to_drink/ginebra_sanmiguel.webp",
         "category": "Gin",
         "alcoholLevel": "Strong",
-        "flavorProfile": ["Bold", "Herbal", "Citrus"],
-        "mood": ["happy", "energetic", "casual"],
+        "flavorProfile": ["Bold", "Neutral", "Citrus"],
+        "mood": ["Happy", "Energetic", "Casual"],
         "price": "₱100 - 250"
       },
       {
@@ -520,8 +520,8 @@
         "image": " /images/ready_to_drink/emperador_light.webp",
         "category": "Brandy",
         "alcoholLevel": "Moderate",
-        "flavorProfile": ["Smooth", "Fruity", "Light"],
-        "mood": ["happy", "relaxed", "casual"],
+        "flavorProfile": ["Neutral", "Fruity", "Sweet"],
+        "mood": ["Happy", "Relaxed", "Casual"],
         "price": "₱100 - 250"
       },
       {
@@ -529,8 +529,8 @@
         "image": " /images/ready_to_drink/jose_cuervo.webp",
         "category": "Tequila",
         "alcoholLevel": "Strong",
-        "flavorProfile": ["Bold", "Earthy", "Citrus"],
-        "mood": ["happy", "energetic", "casual"],
+        "flavorProfile": ["Bold", "Citrus", "Neutral"],
+        "mood": ["Happy", "Energetic", "Casual"],
         "price": "₱2000+"
       },
       {
@@ -538,8 +538,8 @@
         "image": " /images/ready_to_drink/jack_daniels.webp",
         "category": "Whiskey",
         "alcoholLevel": "Strong",
-        "flavorProfile": ["Bold", "Smoky", "Sweet"],
-        "mood": ["happy", "energetic", "casual"],
+        "flavorProfile": ["Bold", "Sweet", "Neutral"],
+        "mood": ["Happy", "Energetic", "Casual"],
         "price": "₱2000+"
       },
       {
@@ -547,8 +547,8 @@
         "image": " /images/ready_to_drink/black_label_jw.webp",
         "category": "Whiskey",
         "alcoholLevel": "Strong",
-        "flavorProfile": ["Bold", "Smoky", "Rich"],
-        "mood": ["happy", "energetic", "casual"],
+        "flavorProfile": ["Bold", "Sweet", "Neutral"],
+        "mood": ["Happy", "Energetic", "Casual"],
         "price": "₱3000+"
       },
       {
@@ -556,8 +556,8 @@
         "image": " /images/ready_to_drink/jagermeister.webp",
         "category": "Herbal Liqueur",
         "alcoholLevel": "Strong",
-        "flavorProfile": ["Herbal", "Sweet", "Spicy"],
-        "mood": ["happy", "energetic", "casual"],
+        "flavorProfile": ["Bold", "Sweet", "Neutral"],
+        "mood": ["Happy", "Energetic", "Casual"],
         "price": "₱1500+"
       }
     ]
