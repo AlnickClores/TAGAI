@@ -11,22 +11,23 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50 backdrop-blur-sm">
-      <div className="bg-card border border-secondary rounded-2xl shadow-2xl max-w-2xl max-h-[90vh] overflow-y-auto w-full">
-        <div className="sticky top-0 bg-card border-b border-secondary/50 p-6 z-50">
-          <div className="flex justify-between items-start gap-4">
+      <div className="bg-card border border-slate-200 rounded-lg shadow-2xl max-w-2xl max-h-[75vh] overflow-y-auto w-full">
+        {/* name */}
+        <div className="sticky top-0 bg-card border-b border-slate-300 p-4 z-50">
+          <div className="flex justify-between items-start">
             <div className="flex-1 min-w-0">
-              <h2 className="text-3xl font-bold text-text mb-3 wrap-break-word">
+              <h2 className="text-2xl font-bold text-text wrap-break-word mb-1">
                 {drink.name}
               </h2>
               {drink.category && (
-                <span className="inline-block text-xs font-semibold bg-primary/10 text-primary px-3 py-1.5 rounded-full">
+                <span className="inline-block text-xs font-semibold bg-primary/10 text-primary px-4 py-1.5 rounded-full">
                   {drink.category}
                 </span>
               )}
             </div>
             <button
               onClick={onClose}
-              className="shrink-0 w-8 h-8 flex items-center justify-center rounded-lg hover:bg-secondary/50 transition-colors"
+              className="shrink-0 w-8 h-8 flex items-center justify-center cursor-pointer"
               aria-label="Close"
             >
               <svg
@@ -46,7 +47,8 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
           </div>
         </div>
 
-        <div className="relative w-full h-64 bg-secondary/20 overflow-hidden">
+        {/* image */}
+        <div className="relative w-full bg-slate-500/10 overflow-hidden">
           <img
             src={drink.image || placeholder}
             alt={drink.name}
@@ -54,34 +56,38 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
           />
         </div>
 
-        <div className="p-6 space-y-8">
-          <div className="grid grid-cols-2 gap-3">
-            <div className="bg-secondary/30 rounded-xl p-4">
-              <h4 className="text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">
+        {/* details container */}
+        <div className="p-6">
+          {/* alcohol level, price */}
+          <div className="grid grid-cols-2 gap-3 border-b pb-5 border-slate-300">
+            <div>
+              <h4 className="text-xs font-medium text-gray-500 mb-2 uppercase tracking-wide">
                 Alcohol Level
               </h4>
-              <p className="text-2xl font-bold text-text">
+              <p className="text-xl font-semibold text-text">
                 {drink.alcoholLevel}
               </p>
             </div>
-            <div className="bg-secondary/30 rounded-xl p-4">
-              <h4 className="text-xs font-semibold text-muted-foreground mb-2 uppercase tracking-wide">
+
+            <div>
+              <h4 className="text-xs font-medium text-gray-500 mb-2 uppercase tracking-wide">
                 Price
               </h4>
-              <p className="text-2xl font-bold text-text">{drink.price}</p>
+              <p className="text-xl font-semibold text-text">{drink.price}</p>
             </div>
           </div>
 
+          {/* flavor profile */}
           {drink.flavorProfile && drink.flavorProfile.length > 0 && (
-            <div>
-              <h3 className="text-sm font-semibold text-text mb-4 uppercase tracking-wide">
+            <div className="border-b py-5 border-slate-300">
+              <h3 className="text-sm font-medium text-gray-500 mb-2 uppercase tracking-wide">
                 Flavor Profile
               </h3>
               <div className="flex flex-wrap gap-2">
                 {drink.flavorProfile.map((flavor) => (
                   <span
                     key={flavor}
-                    className="text-xs font-medium bg-accent/20 text-accent px-3 py-2 rounded-full"
+                    className="text-xs font-medium bg-primary/30 px-3 py-1.5 rounded-md"
                   >
                     {flavor}
                   </span>
@@ -90,16 +96,19 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
             </div>
           )}
 
+          {/* mood */}
           {drink.mood && drink.mood.length > 0 && (
-            <div>
-              <h3 className="text-sm font-semibold text-text mb-4 uppercase tracking-wide">
+            <div
+              className={`py-5 ${drink.category === "mixes" ? "border-b border-slate-300" : ""}`}
+            >
+              <h3 className="text-sm font-medium text-gray-500 mb-2 uppercase tracking-wide">
                 Perfect For
               </h3>
               <div className="flex flex-wrap gap-2">
                 {drink.mood.map((m) => (
                   <span
                     key={m}
-                    className="text-xs font-medium bg-secondary/40 text-text px-3 py-2 rounded-full"
+                    className="text-xs font-medium bg-primary/30 text-text px-3 py-1.5 rounded-md"
                   >
                     {m}
                   </span>
@@ -108,9 +117,10 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
             </div>
           )}
 
+          {/* recipe */}
           {drink.recipe && drink.recipe.length > 0 && (
-            <div>
-              <h3 className="text-sm font-semibold text-text mb-4 uppercase tracking-wide">
+            <div className="border-b py-5 border-slate-300">
+              <h3 className="text-sm font-medium text-gray-500 mb-2 uppercase tracking-wide">
                 Ingredients
               </h3>
               <ul className="space-y-3">
@@ -127,9 +137,10 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
             </div>
           )}
 
+          {/* instructions */}
           {drink.instructions && drink.instructions.length > 0 && (
-            <div>
-              <h3 className="text-sm font-semibold text-text mb-4 uppercase tracking-wide">
+            <div className="py-5">
+              <h3 className="text-sm font-medium text-gray-500 mb-2 uppercase tracking-wide">
                 Instructions
               </h3>
               <ol className="space-y-3">
@@ -144,15 +155,6 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
               </ol>
             </div>
           )}
-        </div>
-
-        <div className="sticky bottom-0 bg-card border-t border-secondary/50 p-6">
-          <button
-            onClick={onClose}
-            className="w-full bg-primary text-white px-4 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all active:scale-95"
-          >
-            Close
-          </button>
         </div>
       </div>
     </div>
