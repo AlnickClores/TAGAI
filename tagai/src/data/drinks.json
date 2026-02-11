@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "1.0.1",
-    "lastUpdated": "2026-02-11",
+    "version": "1.0.2",
+    "lastUpdated": "2026-02-12",
     "totalDrinks": 37,
     "categories": ["mixes", "readyToDrink"],
     "author": "TAGAI AI",
@@ -409,7 +409,7 @@
     "readyToDrink": [
       {
         "name": "Red Horse Beer",
-        "image": " /images/ready_to_drink/red_horse.jpeg",
+        "image": " /images/ready_to_drink/red_horse.png",
         "category": "Beer",
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Neutral", "Fruity"],
@@ -418,7 +418,7 @@
       },
       {
         "name": "Alfonso",
-        "image": " /images/ready_to_drink/alfonso.jpg",
+        "image": " /images/ready_to_drink/alfonso.png",
         "category": "Brandy",
         "alcoholLevel": "Moderate",
         "flavorProfile": ["Sweet", "Fruity", "Neutral"],
@@ -427,7 +427,7 @@
       },
       {
         "name": "Lemon Dou",
-        "image": " /images/ready_to_drink/lemon_dou.webp",
+        "image": " /images/ready_to_drink/lemon_dou.png",
         "category": "Chuhai (Japanese Cocktail)",
         "alcoholLevel": "Moderate",
         "flavorProfile": ["Citrus", "Sweet", "Neutral"],
@@ -472,7 +472,7 @@
       },
       {
         "name": "Tanduay Ice",
-        "image": " /images/ready_to_drink/tanduay_ice.webp",
+        "image": " /images/ready_to_drink/tanduay_ice.png",
         "category": "Spirit",
         "alcoholLevel": "Moderate",
         "flavorProfile": ["Sweet", "Fruity", "Neutral"],
@@ -481,7 +481,7 @@
       },
       {
         "name": "San Mig Light",
-        "image": " /images/ready_to_drink/sanmig_light.webp",
+        "image": " /images/ready_to_drink/sanmig_light.png",
         "category": "Beer",
         "alcoholLevel": "Light",
         "flavorProfile": ["Neutral", "Fruity", "Sweet"],
@@ -490,7 +490,7 @@
       },
       {
         "name": "Primera Light",
-        "image": " /images/ready_to_drink/primera_light.jpeg",
+        "image": " /images/ready_to_drink/primera_light.png",
         "category": "Brandy",
         "alcoholLevel": "Moderate",
         "flavorProfile": ["Neutral", "Sweet", "Fruity"],
@@ -508,7 +508,7 @@
       },
       {
         "name": "Ginebra San Miguel",
-        "image": " /images/ready_to_drink/ginebra_sanmiguel.webp",
+        "image": " /images/ready_to_drink/ginebra_sanmiguel.png",
         "category": "Gin",
         "alcoholLevel": "Strong",
         "flavorProfile": ["Bold", "Neutral", "Citrus"],

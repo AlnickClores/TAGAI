@@ -13,11 +13,11 @@ const DrinkCard = ({ drink, onClick }: DrinkCardProps) => {
       onClick={onClick}
       className="group relative overflow-hidden border border-slate-200 rounded-lg bg-card hover:shadow-lg hover:scale-101 transition-all duration-300 cursor-pointer flex flex-col h-full shadow-md"
     >
-      <div className="relative w-full overflow-hidden bg-secondary/5">
+      <div className="relative w-full aspect-square overflow-hidden bg-secondary/5">
         <img
           src={drink.image || placeholder}
           alt={drink.name}
-          className="w-full h-48 object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         />
       </div>
 

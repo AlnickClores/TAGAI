@@ -47,12 +47,12 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
           </div>
         </div>
 
-        {/* image */}
-        <div className="relative w-full bg-slate-500/10 overflow-hidden">
+        {/* image - square container with centered image */}
+        <div className="relative w-full aspect-square bg-slate-500/10 overflow-hidden flex items-center justify-center p-4">
           <img
             src={drink.image || placeholder}
             alt={drink.name}
-            className="w-full h-full object-contain"
+            className="max-w-full max-h-full w-auto h-auto object-contain"
           />
         </div>
 
