@@ -176,188 +176,198 @@ const PreferencesForm = ({
     <form
       id="preferencesForm"
       onSubmit={handleSubmit}
-      className="space-y-10 py-8 px-4 mt-15 bg-card rounded-2xl shadow-lg border border-secondary"
+      className="glass-panel rounded-3xl px-5 py-8 md:px-8 md:py-10"
     >
-      <h1 className="text-xl font-semibold">What are we pouring today?</h1>
+      <div className="form-layout">
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <span className="tagai-kicker">Personalize your pour</span>
+            <h2 className="text-2xl md:text-3xl font-semibold display-font">
+              What are we pouring today?
+            </h2>
+            <p className="tagai-muted text-sm md:text-base">
+              Pick a vibe and we will tailor a drink lineup to match.
+            </p>
+          </div>
 
-      {/* drink type */}
-      <div className="flex flex-col space-y-3">
-        <label className="font-semibold text-lg">Drink Type</label>
-        <div className="flex flex-wrap gap-2">
-          {drinkTypes.map((type) => (
-            <button
-              type="button"
-              key={type.type}
-              onClick={() => handleSetDrinkType(type.type)}
-              className={`flex items-center gap-2 px-4 py-1.5 rounded-full cursor-pointer transition-all border
-          ${type.type === drinkType ? "font-semibold" : "border-slate-300"}
-        `}
-              style={
-                type.type === drinkType
-                  ? {
-                      borderColor: type.color,
-                      backgroundColor: `${type.color}0D`,
-                      color: type.color,
-                    }
-                  : undefined
-              }
-            >
-              <div style={{ color: type.color }}>
-                {type.type === "Mixes"
-                  ? icons.mixesIcon
-                  : icons.readyToDrinkIcon}
+          <div className="form-actions">
+            <button type="submit" className="w-full tagai-button">
+              Show my drink
+            </button>
+            <p className="form-helper">
+              Multi-select mood and flavor to fine tune the blend.
+            </p>
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          {/* drink type */}
+          <div className="form-section flex flex-col space-y-3">
+            <label className="font-semibold text-lg">Drink Type</label>
+            <div className="flex flex-wrap gap-2">
+              {drinkTypes.map((type) => (
+                <button
+                  type="button"
+                  key={type.type}
+                  onClick={() => handleSetDrinkType(type.type)}
+                  className={`chip cursor-pointer transition-all ${
+                    type.type === drinkType ? "font-semibold" : ""
+                  }`}
+                  style={
+                    type.type === drinkType
+                      ? {
+                          borderColor: type.color,
+                          backgroundColor: `${type.color}0D`,
+                          color: type.color,
+                        }
+                      : undefined
+                  }
+                >
+                  <div style={{ color: type.color }}>
+                    {type.type === "Mixes"
+                      ? icons.mixesIcon
+                      : icons.readyToDrinkIcon}
+                  </div>
+                  <span className="text-xs md:text-sm">{type.type}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="form-section grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* mood */}
+            <div className="flex flex-col space-y-3">
+              <label className="font-semibold text-lg">Mood</label>
+
+              <div className="flex flex-wrap gap-2">
+                {moods.map((m) => {
+                  const selected = mood.includes(m.label);
+
+                  return (
+                    <button
+                      key={m.label}
+                      type="button"
+                      onClick={() => handleToggleMood(m.label)}
+                      className={`chip cursor-pointer transition-all ${
+                        selected ? "font-semibold" : ""
+                      }`}
+                      style={
+                        selected
+                          ? {
+                              borderColor: m.color,
+                              backgroundColor: `${m.color}0D`,
+                              color: m.color,
+                            }
+                          : undefined
+                      }
+                    >
+                      <span className="text-sm">{m.icon}</span>
+                      <span className="text-xs md:text-sm">{m.label}</span>
+                    </button>
+                  );
+                })}
               </div>
-              <span className="text-xs md:text-sm">{type.type}</span>
-            </button>
-          ))}
-        </div>
-      </div>
+            </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 space-y-3">
-        {/* mood */}
-        <div className="flex flex-col space-y-3">
-          <label className="font-semibold text-lg">Mood</label>
+            {/* flavor */}
+            <div className="flex flex-col space-y-3">
+              <label className="font-semibold text-lg">Flavor Preference</label>
 
-          <div className="flex flex-wrap gap-2">
-            {moods.map((m) => {
-              const selected = mood.includes(m.label);
+              <div className="flex flex-wrap gap-2">
+                {flavors.map((f) => {
+                  const selected = flavor.includes(f.label);
 
-              return (
+                  return (
+                    <button
+                      key={f.label}
+                      type="button"
+                      onClick={() => handleToggleFlavor(f.label)}
+                      className={`chip cursor-pointer transition-all ${
+                        selected ? "font-semibold" : ""
+                      }`}
+                      style={
+                        selected
+                          ? {
+                              borderColor: f.color,
+                              backgroundColor: `${f.color}0D`,
+                              color: f.color,
+                            }
+                          : undefined
+                      }
+                    >
+                      <span className="text-sm">{f.icon}</span>
+                      <span className="text-xs md:text-sm">{f.label}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
+          {/* alcohol level */}
+          <div className="form-section flex flex-col space-y-3">
+            <label className="font-semibold text-lg">Booze Level</label>
+            <div className="flex flex-wrap gap-2">
+              {alcoholLevels.map((a) => (
                 <button
-                  key={m.label}
+                  key={a.level}
                   type="button"
-                  onClick={() => handleToggleMood(m.label)}
-                  className={`
-            flex items-center gap-2 px-4 py-1.5 rounded-full
-            transition-all border cursor-pointer
-            ${selected ? "font-semibold" : "border-slate-300"}
-          `}
+                  onClick={() => setAlcohol(a.level)}
+                  className={`chip cursor-pointer transition-all ${
+                    a.level === alcohol ? "font-semibold" : ""
+                  }`}
                   style={
-                    selected
+                    a.level === alcohol
                       ? {
-                          borderColor: m.color,
-                          backgroundColor: `${m.color}0D`,
-                          color: m.color,
+                          borderColor: a.color,
+                          backgroundColor: `${a.color}0D`,
+                          color: a.color,
                         }
                       : undefined
                   }
                 >
-                  <span className="text-sm">{m.icon}</span>
-                  <span className="text-xs md:text-sm">{m.label}</span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* flavor */}
-        <div className="flex flex-col space-y-3">
-          <label className="font-semibold text-lg">Flavor Preference</label>
-
-          <div className="flex flex-wrap gap-2">
-            {flavors.map((f) => {
-              const selected = flavor.includes(f.label);
-
-              return (
-                <button
-                  key={f.label}
-                  type="button"
-                  onClick={() => handleToggleFlavor(f.label)}
-                  className={`
-            flex items-center gap-2 px-4 py-1.5 rounded-full
-            transition-all border cursor-pointer
-            ${selected ? "font-semibold" : "border-slate-300"}
-          `}
-                  style={
-                    selected
-                      ? {
-                          borderColor: f.color,
-                          backgroundColor: `${f.color}0D`,
-                          color: f.color,
-                        }
-                      : undefined
-                  }
-                >
-                  <span className="text-sm">{f.icon}</span>
-                  <span className="text-xs md:text-sm">{f.label}</span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* alcohol level */}
-      <div className="flex flex-col space-y-3">
-        <label className="font-semibold text-lg">Booze Level</label>
-        <div className="flex flex-wrap gap-2">
-          {alcoholLevels.map((a) => (
-            <button
-              key={a.level}
-              type="button"
-              onClick={() => setAlcohol(a.level)}
-              className={`
-          flex items-center gap-2 px-4 py-1.5 rounded-full transition-all border cursor-pointer
-          ${a.level === alcohol ? "font-semibold" : "border-slate-300"}
-        `}
-              style={
-                a.level === alcohol
-                  ? {
-                      borderColor: a.color,
-                      backgroundColor: `${a.color}0D`,
+                  <span
+                    style={{
                       color: a.color,
-                    }
-                  : undefined
-              }
-            >
-              <span
-                style={{
-                  color: a.color,
-                }}
-              >
-                {a.icon}
-              </span>
-              <span className="text-xs md:text-sm">{a.level}</span>
-            </button>
-          ))}
+                    }}
+                  >
+                    {a.icon}
+                  </span>
+                  <span className="text-xs md:text-sm">{a.level}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="form-section flex flex-col space-y-3">
+            {/* budget */}
+            <label className="font-semibold text-lg">Budget</label>
+            <div className="flex flex-wrap gap-2">
+              {budgets.map((b) => (
+                <button
+                  key={b}
+                  type="button"
+                  onClick={() => setBudget(b)}
+                  className={`chip cursor-pointer transition-all ${
+                    budget === b ? "font-semibold" : ""
+                  }`}
+                  style={
+                    budget === b
+                      ? {
+                          borderColor: "#F59E0B",
+                          backgroundColor: `#F59E0B0D`,
+                          color: "#F59E0B",
+                        }
+                      : undefined
+                  }
+                >
+                  <span className="text-xs md:text-sm">{b}</span>
+                </button>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="flex flex-col space-y-3">
-        {/* budget */}
-        <label className="font-semibold text-lg">Budget</label>
-        <div className="flex flex-wrap gap-2">
-          {budgets.map((b) => (
-            <button
-              key={b}
-              type="button"
-              onClick={() => setBudget(b)}
-              className={`
-          flex items-center justify-center px-4 py-2 rounded-full transition-all border cursor-pointer
-          ${budget === b ? "font-semibold" : "border-slate-300"}
-        `}
-              style={
-                budget === b
-                  ? {
-                      borderColor: "#F59E0B",
-                      backgroundColor: `#F59E0B0D`,
-                      color: "#F59E0B",
-                    }
-                  : undefined
-              }
-            >
-              <span className="text-xs md:text-sm">{b}</span>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <button
-        type="submit"
-        className="w-full p-3 border border-primary bg-primary/15 text-primary hover:bg-primary hover:text-white rounded-full font-semibold shadow cursor-pointer transition-colors duration-300"
-      >
-        Show My Drink
-      </button>
     </form>
   );
 };

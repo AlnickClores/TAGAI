@@ -14,17 +14,17 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen">
-      <div className="mx-auto max-w-7xl px-4">
+    <div className="app-background min-h-screen">
+      <div className="app-shell">
         <Navbar />
-        <div className="flex flex-col gap-7 mb-24">
+        <main className="flex flex-col gap-16 md:gap-20">
           <Hero />
           <PreferencesForm
             setLoading={setLoading}
             onRecommendations={handleRecommendations}
           />
           <Recommendation loading={loading} recommendations={recommendations} />
-        </div>
+        </main>
 
         <Footer />
       </div>

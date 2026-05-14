@@ -18,44 +18,44 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-background">
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-full max-w-2xl opacity-30">
-        <BartenderAnimation />
-      </div>
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8">
-        <div className="space-y-6">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight text-balance">
-            Discover Your
-            <span className="block text-primary"> Perfect Drink</span>
+    <section className="relative w-full overflow-hidden mt-10 lg:mt-5">
+      <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] min-h-[70vh] px-2 md:px-6">
+        <div className="space-y-6 text-left">
+          <span className="tagai-kicker">Drink Recommendation AI</span>
+          <h1 className="section-title display-font text-text">
+            Discover your next signature pour, crafted for your mood.
           </h1>
 
-          <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed text-balance">
-            Let TAGAI guide you to the ideal beverage tailored to your mood and
-            preferences.
+          <p className="text-base md:text-lg tagai-muted max-w-xl leading-relaxed">
+            TAGAI blends flavor, vibe, and budget into a curated drink lineup so
+            every sip feels intentional.
           </p>
+
+          <div className="flex flex-wrap items-center gap-3 pt-4">
+            <button onClick={scrollToPreferencesForm} className="tagai-button">
+              Explore recommendations
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.6"
+                stroke="currentColor"
+                className="size-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 5.25v13.5m0 0 6-6m-6 6-6-6"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <div className="pt-8">
-          <button
-            onClick={scrollToPreferencesForm}
-            className="group relative inline-flex items-center gap-2 px-8 py-4 border border-primary bg-primary/10 text-primary font-medium rounded-full transition-all duration-300 hover:shadow-lg cursor-pointer"
-          >
-            <span>Explore Recommendations</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="size-5 animate-bounce"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
-              />
-            </svg>
-          </button>
+        <div className="relative">
+          <div className="hero-card">
+            <BartenderAnimation />
+          </div>
         </div>
       </div>
     </section>

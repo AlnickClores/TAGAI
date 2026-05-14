@@ -10,24 +10,27 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
   if (!drink) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50 backdrop-blur-sm">
-      <div className="bg-card border border-slate-200 rounded-lg shadow-2xl max-w-2xl max-h-[75vh] overflow-y-auto w-full">
-        {/* name */}
-        <div className="sticky top-0 bg-card border-b border-slate-300 p-4 z-50">
-          <div className="flex justify-between items-start">
-            <div className="flex-1 min-w-0">
-              <h2 className="text-2xl font-bold text-text wrap-break-word mb-1">
+    <div className="fixed inset-0 drink-modal-backdrop flex items-center justify-center p-4 z-50">
+      <div className="drink-modal-panel max-w-3xl max-h-[85vh] overflow-y-auto w-full">
+        <div className="drink-modal-header sticky top-0 p-5 md:p-6 z-50">
+          <div className="flex flex-wrap gap-4 items-start justify-between">
+            <div className="flex-1 min-w-0 space-y-2">
+              <span className="tagai-kicker">Signature pour</span>
+              <h2 className="text-2xl md:text-3xl font-semibold display-font text-text wrap-break-word">
                 {drink.name}
               </h2>
-              {drink.category && (
-                <span className="inline-block text-xs font-semibold bg-primary/10 text-primary px-4 py-1.5 rounded-full">
-                  {drink.category}
-                </span>
-              )}
+              <div className="flex flex-wrap items-center gap-2">
+                {drink.category && (
+                  <span className="drink-modal-pill text-xs font-semibold px-4 py-1.5 rounded-full">
+                    {drink.category}
+                  </span>
+                )}
+                <span className="tagai-muted text-xs">Curated by TAGAI</span>
+              </div>
             </div>
             <button
               onClick={onClose}
-              className="shrink-0 w-8 h-8 flex items-center justify-center cursor-pointer"
+              className="shrink-0 w-9 h-9 rounded-full border border-black/10 flex items-center justify-center cursor-pointer hover:bg-black/5 transition-colors"
               aria-label="Close"
             >
               <svg
@@ -47,8 +50,7 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
           </div>
         </div>
 
-        {/* image - square container with centered image */}
-        <div className="relative w-full aspect-square bg-slate-500/10 overflow-hidden flex items-center justify-center p-4">
+        <div className="drink-modal-hero relative w-full aspect-video overflow-hidden flex items-center justify-center p-5">
           <img
             src={drink.image || placeholder}
             alt={drink.name}
@@ -56,39 +58,33 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
           />
         </div>
 
-        {/* details container */}
-        <div className="p-6">
-          {/* alcohol level, price */}
-          <div className="grid grid-cols-2 gap-3 border-b pb-5 border-slate-300">
-            <div>
-              <h4 className="text-xs font-medium text-gray-500 mb-2 uppercase tracking-wide">
+        <div className="p-5 md:p-7 space-y-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="drink-modal-metric p-4">
+              <h4 className="text-xs font-semibold tagai-muted mb-2 uppercase tracking-wide">
                 Alcohol Level
               </h4>
-              <p className="text-xl font-semibold text-text">
+              <p className="text-2xl font-semibold text-text">
                 {drink.alcoholLevel}
               </p>
             </div>
 
-            <div>
-              <h4 className="text-xs font-medium text-gray-500 mb-2 uppercase tracking-wide">
+            <div className="drink-modal-metric p-4">
+              <h4 className="text-xs font-semibold tagai-muted mb-2 uppercase tracking-wide">
                 Price
               </h4>
-              <p className="text-xl font-semibold text-text">{drink.price}</p>
+              <p className="text-2xl font-semibold text-text">{drink.price}</p>
             </div>
           </div>
 
-          {/* flavor profile */}
           {drink.flavorProfile && drink.flavorProfile.length > 0 && (
-            <div className="border-b py-5 border-slate-300">
-              <h3 className="text-sm font-medium text-gray-500 mb-2 uppercase tracking-wide">
+            <div className="space-y-3">
+              <h3 className="text-sm font-semibold tagai-muted uppercase tracking-wide">
                 Flavor Profile
               </h3>
               <div className="flex flex-wrap gap-2">
                 {drink.flavorProfile.map((flavor) => (
-                  <span
-                    key={flavor}
-                    className="text-xs font-medium bg-primary/30 px-3 py-1.5 rounded-md"
-                  >
+                  <span key={flavor} className="drink-modal-tag">
                     {flavor}
                   </span>
                 ))}
@@ -96,20 +92,14 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
             </div>
           )}
 
-          {/* mood */}
           {drink.mood && drink.mood.length > 0 && (
-            <div
-              className={`py-5 ${drink.category === "mixes" ? "border-b border-slate-300" : ""}`}
-            >
-              <h3 className="text-sm font-medium text-gray-500 mb-2 uppercase tracking-wide">
+            <div className="space-y-3">
+              <h3 className="text-sm font-semibold tagai-muted uppercase tracking-wide">
                 Perfect For
               </h3>
               <div className="flex flex-wrap gap-2">
                 {drink.mood.map((m) => (
-                  <span
-                    key={m}
-                    className="text-xs font-medium bg-primary/30 text-text px-3 py-1.5 rounded-md"
-                  >
+                  <span key={m} className="drink-modal-tag">
                     {m}
                   </span>
                 ))}
@@ -117,44 +107,47 @@ const DrinkDetailModal = ({ drink, onClose }: DrinkDetailModalProps) => {
             </div>
           )}
 
-          {/* recipe */}
-          {drink.recipe && drink.recipe.length > 0 && (
-            <div className="border-b py-5 border-slate-300">
-              <h3 className="text-sm font-medium text-gray-500 mb-2 uppercase tracking-wide">
-                Ingredients
-              </h3>
-              <ul className="space-y-3">
-                {drink.recipe.map((ingredient, idx) => (
-                  <li
-                    key={idx}
-                    className="text-sm text-text flex items-start gap-3"
-                  >
-                    <span className="block w-2 h-2 rounded-full bg-primary/60 mt-2 shrink-0" />
-                    <span>{ingredient}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          {(drink.recipe && drink.recipe.length > 0) ||
+          (drink.instructions && drink.instructions.length > 0) ? (
+            <div className="border-t drink-modal-divider pt-6 grid gap-6 lg:grid-cols-[1fr_1.1fr]">
+              {drink.recipe && drink.recipe.length > 0 && (
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold tagai-muted uppercase tracking-wide">
+                    Ingredients
+                  </h3>
+                  <ul className="space-y-3">
+                    {drink.recipe.map((ingredient, idx) => (
+                      <li
+                        key={idx}
+                        className="text-sm text-text flex items-start gap-3"
+                      >
+                        <span className="block w-2 h-2 rounded-full bg-primary/60 mt-2 shrink-0" />
+                        <span>{ingredient}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
-          {/* instructions */}
-          {drink.instructions && drink.instructions.length > 0 && (
-            <div className="py-5">
-              <h3 className="text-sm font-medium text-gray-500 mb-2 uppercase tracking-wide">
-                Instructions
-              </h3>
-              <ol className="space-y-3">
-                {drink.instructions.map((step, idx) => (
-                  <li key={idx} className="text-sm text-text flex gap-3">
-                    <span className="flex min-w-7 h-7 rounded-full bg-primary text-white text-xs font-bold items-center justify-center shrink-0">
-                      {idx + 1}
-                    </span>
-                    <span className="pt-0.5 leading-relaxed">{step}</span>
-                  </li>
-                ))}
-              </ol>
+              {drink.instructions && drink.instructions.length > 0 && (
+                <div className="space-y-3">
+                  <h3 className="text-sm font-semibold tagai-muted uppercase tracking-wide">
+                    Instructions
+                  </h3>
+                  <ol className="space-y-3">
+                    {drink.instructions.map((step, idx) => (
+                      <li key={idx} className="text-sm text-text flex gap-3">
+                        <span className="flex min-w-7 h-7 rounded-full bg-primary text-white text-xs font-bold items-center justify-center shrink-0">
+                          {idx + 1}
+                        </span>
+                        <span className="pt-0.5 leading-relaxed">{step}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              )}
             </div>
-          )}
+          ) : null}
         </div>
       </div>
     </div>

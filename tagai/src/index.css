@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=Space+Grotesk:wght@400;500;600&display=swap");
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -13,22 +14,377 @@
 html,
 body {
   @apply bg-background text-text;
+  font-family:
+    "Space Grotesk",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+.display-font {
+  font-family: "Fraunces", "Times New Roman", serif;
+  letter-spacing: -0.02em;
 }
 
 :root {
-  --background: #fdfbfe;
-  --card: #f5f3f6;
-  --text: #14091b;
-  --primary: #8d3cc3;
-  --secondary: #e09abd;
-  --accent: #d16b7e;
+  --background: #fbf6ef;
+  --card: #ffffff;
+  --text: #1a1410;
+  --primary: #b44b2a;
+  --secondary: #e7c4a7;
+  --accent: #2f7f6d;
 }
 
 .dark {
-  --background: #030104;
-  --card: #0b090c;
-  --text: #efe4f6;
-  --primary: #8d3cc3;
-  --secondary: #651f42;
-  --accent: #942e40;
+  --background: #0d0b0b;
+  --card: #151010;
+  --text: #f6efe8;
+  --primary: #d66b44;
+  --secondary: #6e3c24;
+  --accent: #61b8a2;
+}
+
+.app-background {
+  background:
+    radial-gradient(circle at top, #fdebd9 0%, #fbf6ef 45%),
+    radial-gradient(circle at 20% 20%, #f5d7c4 0%, transparent 55%),
+    radial-gradient(circle at 80% 10%, #f2e5d7 0%, transparent 50%);
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 56px;
+}
+
+@media (min-width: 768px) {
+  .app-shell {
+    padding: 32px 32px 72px;
+  }
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(180, 75, 42, 0.16);
+  box-shadow: 0 18px 50px rgba(20, 12, 8, 0.1);
+  backdrop-filter: blur(14px);
+}
+
+.tagai-muted {
+  color: rgba(26, 20, 16, 0.65);
+}
+
+.tagai-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(26, 20, 16, 0.55);
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 1.2rem + 2vw, 2.8rem);
+  line-height: 1.1;
+}
+
+.tagai-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(120deg, #c25b36, #b44b2a 60%, #9c3d23);
+  border: 1px solid rgba(180, 75, 42, 0.6);
+  box-shadow: 0 12px 25px rgba(180, 75, 42, 0.25);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+.tagai-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px rgba(180, 75, 42, 0.3);
+  filter: brightness(1.03);
+}
+
+.tagai-button-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(180, 75, 42, 0.35);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.tagai-button-outline:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 24px rgba(26, 20, 16, 0.12);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(26, 20, 16, 0.15);
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.7);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(26, 20, 16, 0.08);
+}
+
+.hero-card {
+  border-radius: 28px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(180, 75, 42, 0.15);
+  box-shadow: 0 24px 45px rgba(20, 12, 8, 0.15);
+  backdrop-filter: blur(18px);
+}
+
+.hero-glow {
+  position: absolute;
+  inset: -20% auto auto -10%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(194, 91, 54, 0.35), transparent 70%);
+  filter: blur(10px);
+}
+
+.hero-glow.secondary {
+  inset: auto -20% -15% auto;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(47, 127, 109, 0.3), transparent 70%);
+}
+
+.drink-media-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 10, 8, 0) 0%,
+    rgba(15, 10, 8, 0.45) 100%
+  );
+}
+
+.drink-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(26, 20, 16, 0.12);
+  box-shadow: 0 14px 35px rgba(20, 12, 8, 0.12);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.drink-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(20, 12, 8, 0.18);
+}
+
+.form-layout {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .form-layout {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: start;
+  }
+}
+
+.form-section {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(26, 20, 16, 0.08);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(20, 12, 8, 0.08);
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-helper {
+  font-size: 0.82rem;
+  color: rgba(26, 20, 16, 0.55);
+}
+
+.drink-modal-backdrop {
+  background:
+    radial-gradient(circle at top, rgba(24, 16, 12, 0.7), rgba(10, 8, 8, 0.85)),
+    rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+}
+
+.drink-modal-panel {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(26, 20, 16, 0.12);
+  border-radius: 28px;
+  box-shadow: 0 28px 60px rgba(10, 8, 8, 0.35);
+}
+
+.drink-modal-header {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(26, 20, 16, 0.08);
+}
+
+.drink-modal-hero {
+  background: linear-gradient(
+    135deg,
+    rgba(231, 196, 167, 0.5),
+    rgba(255, 255, 255, 0.2)
+  );
+}
+
+.drink-modal-pill {
+  background: rgba(180, 75, 42, 0.12);
+  color: var(--primary);
+  border: 1px solid rgba(180, 75, 42, 0.25);
+}
+
+.drink-modal-metric {
+  border: 1px solid rgba(26, 20, 16, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+}
+
+.drink-modal-tag {
+  background: rgba(180, 75, 42, 0.12);
+  color: var(--text);
+  border: 1px solid rgba(180, 75, 42, 0.2);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+
+.drink-modal-divider {
+  border-color: rgba(26, 20, 16, 0.08);
+}
+
+.dark .app-background {
+  background:
+    radial-gradient(circle at top, #1e1513 0%, #0d0b0b 45%),
+    radial-gradient(circle at 20% 20%, #2c1a14 0%, transparent 55%),
+    radial-gradient(circle at 80% 10%, #1b120f 0%, transparent 50%);
+}
+
+.dark .glass-panel {
+  background: rgba(21, 16, 16, 0.75);
+  border: 1px solid rgba(214, 107, 68, 0.18);
+  box-shadow: 0 18px 50px rgba(5, 4, 4, 0.5);
+}
+
+.dark .tagai-muted {
+  color: rgba(246, 239, 232, 0.7);
+}
+
+.dark .tagai-kicker {
+  color: rgba(246, 239, 232, 0.55);
+}
+
+.dark .chip {
+  background: rgba(24, 18, 18, 0.9);
+  border-color: rgba(246, 239, 232, 0.15);
+}
+
+.dark .hero-card {
+  background: rgba(20, 14, 14, 0.85);
+  border-color: rgba(214, 107, 68, 0.2);
+  box-shadow: 0 24px 45px rgba(5, 4, 4, 0.55);
+}
+
+.dark .drink-card {
+  background: rgba(21, 16, 16, 0.95);
+  border-color: rgba(246, 239, 232, 0.12);
+  box-shadow: 0 16px 36px rgba(5, 4, 4, 0.5);
+}
+
+.dark .form-section {
+  background: rgba(20, 14, 14, 0.85);
+  border-color: rgba(246, 239, 232, 0.12);
+  box-shadow: 0 12px 28px rgba(5, 4, 4, 0.45);
+}
+
+.dark .form-helper {
+  color: rgba(246, 239, 232, 0.6);
+}
+
+.dark .drink-modal-backdrop {
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(28, 18, 16, 0.85),
+      rgba(10, 8, 8, 0.95)
+    ),
+    rgba(0, 0, 0, 0.7);
+}
+
+.dark .drink-modal-panel {
+  background: rgba(20, 14, 14, 0.95);
+  border-color: rgba(246, 239, 232, 0.12);
+  box-shadow: 0 30px 70px rgba(5, 4, 4, 0.65);
+}
+
+.dark .drink-modal-header {
+  background: rgba(20, 14, 14, 0.95);
+  border-bottom-color: rgba(246, 239, 232, 0.1);
+}
+
+.dark .drink-modal-hero {
+  background: linear-gradient(
+    135deg,
+    rgba(110, 60, 36, 0.55),
+    rgba(21, 16, 16, 0.2)
+  );
+}
+
+.dark .drink-modal-pill {
+  background: rgba(214, 107, 68, 0.2);
+  border-color: rgba(214, 107, 68, 0.35);
+  color: rgba(246, 239, 232, 0.9);
+}
+
+.dark .drink-modal-metric {
+  background: rgba(24, 18, 18, 0.9);
+  border-color: rgba(246, 239, 232, 0.1);
+}
+
+.dark .drink-modal-tag {
+  background: rgba(214, 107, 68, 0.2);
+  color: rgba(246, 239, 232, 0.9);
+  border-color: rgba(214, 107, 68, 0.35);
+}
+
+.dark .drink-modal-divider {
+  border-color: rgba(246, 239, 232, 0.12);
 }

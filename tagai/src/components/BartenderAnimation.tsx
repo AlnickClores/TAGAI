@@ -231,7 +231,7 @@ export default function BartenderAnimation() {
           width="220"
           height="15"
           fill="currentColor"
-          className="text-muted-foreground opacity-30"
+          className="tagai-muted opacity-30"
           rx="2"
         />
       </svg>
